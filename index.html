@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATMOS-HYBRID v1.0 (PROTOTİP) | Yenilenebilir Enerji & Hibrit Atmosferik Modelleme Platformu - Murat Yeşilağaç</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Leaflet CSS & JS (İnteraktif Harita) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <!-- Chart.js (Zaman Serisi ve Karşılaştırma Grafikleri) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            hud: {
+              bg: '#070b14',
+              panel: 'rgba(13, 21, 38, 0.86)',
+              border: 'rgba(56, 189, 248, 0.22)',
+              cyan: '#38bdf8',
+              emerald: '#10b981',
+              amber: '#f59e0b',
+              rose: '#f43f5e',
+              indigo: '#6366f1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #070b14;
+      color: #f1f5f9;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    /* Glassmorphic Scientific HUD Panels */
+    .hud-panel {
+      background: rgba(11, 18, 33, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+    }
+    .hud-card {
+      background: rgba(18, 29, 51, 0.75);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      transition: all 0.2s ease;
+    }
+    .hud-card:hover {
+      border-color: rgba(56, 189, 248, 0.45);
+      transform: translateY(-1px);
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #070b14;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #38bdf8;
+    }
+    /* Leaflet Dark Map Customization */
+    #map {
+      width: 100%;
+      height: 100%;
+      background: #060a12;
+      z-index: 1;
+    }
+    .leaflet-container {
+      font-family: 'Inter', sans-serif;
+    }
+    .leaflet-popup-content-wrapper {
+      background: rgba(11, 18, 33, 0.95) !important;
+      color: #f8fafc !important;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      border-radius: 10px !important;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6) !important;
+    }
+    .leaflet-popup-tip {
+      background: rgba(11, 18, 33, 0.95) !important;
+    }
+    .leaflet-control-zoom a {
+      background-color: rgba(15, 23, 42, 0.9) !important;
+      color: #38bdf8 !important;
+      border-color: rgba(56, 189, 248, 0.25) !important;
+    }
+    .leaflet-control-zoom a:hover {
+      background-color: #1e293b !important;
+    }
+    /* Weather Streamline Canvas Overlay */
+    #streamlineCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 400;
+    }
+    /* Pulse Radar Marker */
+    .radar-marker {
+      position: relative;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #38bdf8;
+      border: 3px solid #ffffff;
+      box-shadow: 0 0 15px #38bdf8;
+    }
+    .radar-marker::after {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      right: -12px;
+      bottom: -12px;
+      border: 2px solid #38bdf8;
+      border-radius: 50%;
+      animation: radarPulse 1.8s infinite ease-out;
+    }
+    @keyframes radarPulse {
+      0% { transform: scale(0.5); opacity: 1; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col select-none">
+
+  <!-- ================= AR-GE PROTOTİP v1.0 BİLGİLENDİRME BANNER'I ================= -->
+  <div id="protoBanner" class="bg-gradient-to-r from-amber-500/20 via-sky-500/15 to-indigo-500/20 border-b border-amber-400/40 px-4 py-1.5 text-xs flex flex-wrap items-center justify-between gap-2 z-40">
+    <div class="flex items-center gap-2 text-amber-200">
+      <span class="px-2 py-0.5 rounded bg-amber-500 text-slate-950 font-mono font-bold text-[10px] uppercase tracking-wider">AR-GE PROTOTİP v1.0 (PoC)</span>
+      <p class="text-[11px] sm:text-xs text-slate-200">
+        <b>BU SİSTEM BİR AR-GE PROTOTİPİDİR (v1.0):</b> Seçilen koordinat için küresel NWP (<span class="text-sky-300 font-mono">Open-Meteo ECMWF/GFS</span>) baz verilerini canlı çeker ve üzerine deneysel <b>Hibrit Alt-Izgara (PINN + Topoğrafik Downscaling v1.0)</b> simülasyon katmanını uygular.
+      </p>
+    </div>
+    <div class="flex items-center gap-2 ml-auto">
+      <button onclick="openAcademicModal()" class="text-[11px] font-mono text-amber-300 hover:text-amber-200 underline">Neler Gerçek / Neler Simülasyon?</button>
+      <button onclick="document.getElementById('protoBanner').classList.add('hidden')" class="text-slate-400 hover:text-white px-1.5 py-0.5 rounded" title="Gizle">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= ÜST BİLİMSEL HUD HEADER ================= -->
+  <header class="hud-panel z-30 border-b border-sky-500/20 px-4 py-2.5 flex flex-wrap items-center justify-between gap-3">
+    <!-- Sol: Logo & Başlık -->
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 via-sky-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-sky-500/20 border border-amber-300/40">
+        <i class="fa-solid fa-wind text-white text-lg"></i>
+      </div>
+      <div>
+        <div class="flex flex-wrap items-center gap-2">
+          <h1 class="font-bold text-base sm:text-lg tracking-tight text-white">
+            ATMOS-HYBRID <span class="text-sky-400 font-mono">v1.0</span>
+          </h1>
+          <span class="text-[11px] font-mono font-bold uppercase px-2.5 py-0.5 rounded-md bg-amber-500/20 text-amber-300 border border-amber-400/50 shadow-sm">
+            <i class="fa-solid fa-flask mr-1"></i>PROTOTİP SÜRÜMÜ v1.0 (PoC)
+          </span>
+          <span id="liveApiBadge" class="hidden md:inline-flex items-center gap-1.5 text-[11px] font-mono text-emerald-300 bg-emerald-950/70 border border-emerald-500/40 px-2.5 py-0.5 rounded-full">
+            <span id="liveApiDot" class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span id="liveApiStatusText">Veri Kaynağı: Canlı NWP (Open-Meteo API) + Hibrit Prototip Motoru v1.0</span>
+          </span>
+        </div>
+        <p class="text-xs text-slate-400">
+          Yenilenebilir Enerji (RES & GES) ve Hibrit Atmosferik Modelleme Platformu — Kavram Kanıtlama (Proof of Concept)
+        </p>
+      </div>
+    </div>
+
+    <!-- Orta: Canlı Sistem Durumu & Koordinat Özeti -->
+    <div class="hidden 2xl:flex items-center gap-5 bg-slate-900/90 px-4 py-1.5 rounded-xl border border-slate-700/60 text-xs font-mono">
+      <div>
+        <span class="text-slate-400">KOORDİNAT:</span>
+        <span id="headerCoordDisplay" class="text-sky-400 font-semibold ml-1">39.9840° K, 26.2150° D</span>
+      </div>
+      <div class="h-4 w-px bg-slate-700"></div>
+      <div>
+        <span class="text-slate-400">ALT-IZGARA:</span>
+        <span class="text-amber-400 font-semibold ml-1">5x5 Hücre (3x3 km → 600 m PoC)</span>
+      </div>
+      <div class="h-4 w-px bg-slate-700"></div>
+      <div>
+        <span class="text-slate-400">UTC ZAMAN:</span>
+        <span id="utcClock" class="text-slate-200 ml-1">--:--:-- UTC</span>
+      </div>
+    </div>
+
+    <!-- Sağ: Geliştirici Bilgisi & Aksiyon Butonları -->
+    <div class="flex items-center gap-2">
+      <div class="text-right hidden sm:block mr-1">
+        <div class="text-xs font-semibold text-slate-200">Geliştirici: Murat Yeşilağaç</div>
+        <a href="https://github.com/muratyesil552" target="_blank" class="text-[11px] font-mono text-sky-400 hover:underline flex items-center justify-end gap-1">
+          <i class="fa-brands fa-github"></i> muratyesil552.github.io
+        </a>
+      </div>
+
+      <button onclick="openAcademicModal()" class="px-3 py-2 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-400/40 text-xs font-semibold flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-microscope text-amber-400"></i>
+        <span>Prototip v1.0 Mimari & Metodoloji</span>
+      </button>
+
+      <button onclick="copySourceCodeForGithub()" class="px-3 py-2 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-semibold text-xs flex items-center gap-1.5 shadow-lg shadow-sky-500/20 transition">
+        <i class="fa-solid fa-code"></i>
+        <span class="hidden sm:inline">GitHub Kodu Kopyala</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= ANA ÇALIŞMA ALANI (SIDEBAR + HARİTA + ANALİZ PANELİ) ================= -->
+  <main class="flex-1 flex flex-col lg:flex-row relative overflow-hidden">
+
+    <!-- SOL PANEL: HİBRİT MODEL KONFİGÜRASYONU VE KOORDİNAT SEÇİMİ -->
+    <aside class="w-full lg:w-[370px] xl:w-[400px] hud-panel z-20 border-r border-sky-500/20 flex flex-col lg:h-[calc(100vh-95px)] overflow-y-auto p-4 gap-3.5">
+      
+      <!-- Canlı Veri Kaynağı & Prototip Durum Kartı -->
+      <div class="rounded-xl p-3 bg-slate-900/95 border border-amber-500/30 flex flex-col gap-1.5">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-mono font-bold uppercase text-amber-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-satellite"></i> Prototip Veri Hattı (v1.0)
+          </span>
+          <span id="sidebarApiStatus" class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+            CANLI API BAĞLI
+          </span>
+        </div>
+        <div class="text-[11px] text-slate-300 font-mono leading-snug">
+          Veri Kaynağı: <span class="text-sky-300">Canlı NWP (Open-Meteo API)</span> + <span class="text-amber-300">Hibrit Prototip Motoru v1.0</span>
+        </div>
+        <div class="flex items-center justify-between text-[10px] text-slate-400 font-mono pt-1 border-t border-slate-800">
+          <span>Son Çekilen NWP: <b id="lastFetchTime" class="text-slate-200">--:--:--</b></span>
+          <span>Basınç/Sıcaklık: <b id="liveTempPress" class="text-sky-300">--°C / -- hPa</b></span>
+        </div>
+      </div>
+
+      <!-- 1. Koordinat Girişi & Hazır Enerji Santrali Bölgeleri -->
+      <div class="hud-card rounded-xl p-3.5">
+        <div class="flex items-center justify-between mb-2.5">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-sky-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            1. Koordinat & Saha Seçimi
+          </h2>
+          <span class="text-[11px] text-amber-300 font-mono">Haritaya Tıklayın</span>
+        </div>
+
+        <!-- Hazır Türkiye Yenilenebilir Enerji Bölgeleri -->
+        <div class="mb-3">
+          <label class="block text-[11px] text-slate-400 mb-1">Türkiye Stratejik RES / GES Sahaları (Hızlı Test):</label>
+          <select id="presetSelect" onchange="handlePresetChange(this.value)" class="w-full bg-slate-900/90 border border-slate-700 focus:border-sky-400 rounded-lg px-2.5 py-2 text-xs text-slate-100 outline-none font-medium">
+            <option value="39.9840,26.2150,240,RES">📍 Çanakkale RES Koridoru (Yüksek Rüzgar Potansiyeli)</option>
+            <option value="37.7680,33.5830,1015,GES">☀️ Konya Karapınar YEKA GES (Yüksek GHI & DNI)</option>
+            <option value="38.5420,26.3820,5,OFFSHORE">🌊 İzmir Karaburun - Deniz Üstü (Offshore RES)</option>
+            <option value="38.5310,35.4520,2180,KOMPLEKS">⛰️ Kayseri Erciyes Dağlık Saha (Kompleks Topoğrafya)</option>
+            <option value="41.2410,29.0120,115,RES">⚡ İstanbul Kuzey & Karadeniz Kıyı Hattı</option>
+            <option value="36.8841,30.7056,45,GES">☀️ Antalya Akdeniz Güneş Kuşağı</option>
+          </select>
+        </div>
+
+        <!-- Enlem & Boylam Inputları -->
+        <div class="grid grid-cols-2 gap-2.5 mb-2.5">
+          <div>
+            <label class="block text-[11px] text-slate-400 mb-1 font-mono">ENLEM (Latitude °K)</label>
+            <input id="latInput" type="number" step="0.0001" value="39.9840" class="w-full bg-slate-950 border border-slate-700 focus:border-sky-400 rounded-lg px-2.5 py-1.5 text-xs font-mono text-sky-300 outline-none" />
+          </div>
+          <div>
+            <label class="block text-[11px] text-slate-400 mb-1 font-mono">BOYLAM (Longitude °D)</label>
+            <input id="lonInput" type="number" step="0.0001" value="26.2150" class="w-full bg-slate-950 border border-slate-700 focus:border-sky-400 rounded-lg px-2.5 py-1.5 text-xs font-mono text-sky-300 outline-none" />
+          </div>
+        </div>
+
+        <!-- Rakım ve Türbin Hub Yüksekliği / Panel Açısı -->
+        <div class="grid grid-cols-2 gap-2.5 mb-3">
+          <div>
+            <label class="block text-[11px] text-slate-400 mb-1">Saha Rakımı (ASL m)</label>
+            <input id="altInput" type="number" value="240" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs font-mono text-slate-200 outline-none" />
+          </div>
+          <div>
+            <label class="block text-[11px] text-slate-400 mb-1">Türbin Hub / Seviye</label>
+            <select id="hubHeightSelect" onchange="runHybridSimulation(false)" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-2 py-1.5 text-xs font-mono text-amber-300 outline-none">
+              <option value="80">80m (Standart RES)</option>
+              <option value="100" selected>100m (Open-Meteo NWP)</option>
+              <option value="120">120m (Yüksek Kule)</option>
+              <option value="150">150m (Offshore / Dev)</option>
+              <option value="10">10m (GES & Yüzey Met.)</option>
+            </select>
+          </div>
+        </div>
+
+        <button onclick="goToCoordinatesAndRun()" class="w-full py-2.5 px-3 rounded-lg bg-gradient-to-r from-amber-500 to-sky-500 hover:from-amber-400 hover:to-sky-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-sky-500/25 transition">
+          <i class="fa-solid fa-satellite-dish"></i>
+          <span>Hibrit Haritayı Üret (Canlı NWP + Prototip v1.0)</span>
+        </button>
+      </div>
+
+      <!-- 2. Atmosferik (NWP) + Yapay Zeka (AI) Hibrit Mimari Seçimi -->
+      <div class="hud-card rounded-xl p-3.5">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-microchip"></i>
+            2. Hibrit Prototip Motoru (v1.0)
+          </h2>
+          <span class="text-[10px] font-mono bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded">PoC Katmanı</span>
+        </div>
+
+        <!-- Fiziksel Atmosfer Modeli (NWP) -->
+        <div class="mb-3">
+          <label class="block text-[11px] text-slate-300 font-medium mb-1">
+            A) Canlı Küresel/Mezo NWP Veri Çekirdeği:
+          </label>
+          <select id="nwpModelSelect" onchange="runHybridSimulation(false)" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-2 text-xs text-slate-100 outline-none">
+            <option value="WRF-ARW">Open-Meteo NWP + WRF-ARW v4.5 Parametrizasyonu</option>
+            <option value="ECMWF-IFS">Open-Meteo ECMWF IFS (9km Küresel Canlı Akış)</option>
+            <option value="NOAA-GFS">Open-Meteo NOAA GFS + HRRR Konvektif</option>
+            <option value="ICON-EU">Open-Meteo DWD ICON-EU (Avrupa/Türkiye)</option>
+          </select>
+          <p id="nwpDescText" class="text-[11px] text-slate-400 mt-1 leading-relaxed">
+            Seçilen koordinat için Open-Meteo API üzerinden gerçek 100m rüzgar, yön, GHI, DNI, sıcaklık ve yüzey basıncı serilerini çeker.
+          </p>
+        </div>
+
+        <!-- Hibrit Yapay Zeka & Post-Processing Katmanı -->
+        <div class="mb-3">
+          <label class="block text-[11px] text-slate-300 font-medium mb-1">
+            B) Deneysel Prototip v1.0 Alt-Izgara (Downscaling) Katmanı:
+          </label>
+          <select id="aiModelSelect" onchange="runHybridSimulation(false)" class="w-full bg-slate-900 border border-emerald-500/40 rounded-lg px-2.5 py-2 text-xs text-emerald-300 font-medium outline-none">
+            <option value="PINN">PINN v1.0 (Fizik Tabanlı Sinir Ağı Prototipi + 5x5 Grid)</option>
+            <option value="TRANSFORMER">Spatial-Temporal Transformer PoC + Bi-LSTM</option>
+            <option value="GNN-ANEN">Graph Neural Network (GNN) + Analog Ensemble v1.0</option>
+            <option value="XGB-MOS">XGBoost + Kalman Filtreli MOS Düzeltmesi v1.0</option>
+          </select>
+          <p id="aiDescText" class="text-[11px] text-slate-400 mt-1 leading-relaxed">
+            Canlı NWP verisinin üzerine Monin-Obukhov sınır tabaka fiziği ve 5x5 alt-ızgara topoğrafik hızlanma simülasyonu uygular.
+          </p>
+        </div>
+
+        <!-- Alt-Izgara (Sub-Grid) Fiziksel Parametrizasyon Anahtarları -->
+        <div class="space-y-1.5 pt-2 border-t border-slate-800 text-xs">
+          <label class="flex items-center justify-between cursor-pointer">
+            <span class="text-slate-300 text-[11px]">5x
