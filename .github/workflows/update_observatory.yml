@@ -1,0 +1,36 @@
+name: Update ZINCIR-TR Observatory
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # her 6 saatte bir
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-observatory
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Doğrulama testleri
+        run: python tests/verify.py
+      - name: Boru hattını çalıştır
+        run: python src/run_pipeline.py
+      - name: Değişen çıktıları kaydet
+        run: |
+          git config user.name "zincir-bot"
+          git config user.email "zincir-bot@users.noreply.github.com"
+          git add data/master_ledger.parquet data/master_ledger.csv data/anomaly_catalog.csv docs/web_data
+          git diff --cached --quiet || git commit -m "Gözlemevi verisi güncellendi $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase --autostash
+          git push
