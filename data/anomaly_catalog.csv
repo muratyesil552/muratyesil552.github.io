@@ -48,13 +48,13 @@ TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-28 11:00:00+00
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-28 15:00:00+00:00,2026-10-28 16:00:00+00:00,2,-13.37,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-29 04:00:00+00:00,2026-10-29 05:00:00+00:00,2,-6.55,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-29 11:00:00+00:00,2026-10-29 11:00:00+00:00,1,-6.04,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-03 12:00:00+00:00,2026-11-03 12:00:00+00:00,1,-6.31,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-25 12:00:00+00:00,2026-10-25 12:00:00+00:00,1,6.07,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-26 19:00:00+00:00,2026-10-26 22:00:00+00:00,4,20.23,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-28 01:00:00+00:00,2026-10-28 01:00:00+00:00,1,7.74,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-29 00:00:00+00:00,2026-10-29 00:00:00+00:00,1,8.07,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-03 09:00:00+00:00,2026-11-03 10:00:00+00:00,2,11.36,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-04 02:00:00+00:00,2026-11-04 02:00:00+00:00,1,6.99,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-07 06:00:00+00:00,2026-11-07 07:00:00+00:00,2,6.9,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-03 08:00:00+00:00,2026-11-03 09:00:00+00:00,2,12.1,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-04 02:00:00+00:00,2026-11-04 02:00:00+00:00,1,6.77,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,İklimsel Aşırı Rüzgâr (≥P95),2026-10-27 00:00:00+00:00,2026-10-27 00:00:00+00:00,1,13.2,m/s,geçmiş,ERA5 P95 = 12.2 m/s (G5)
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-23 17:00:00+00:00,2026-10-24 02:00:00+00:00,10,0.36,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-25 17:00:00+00:00,2026-10-25 17:00:00+00:00,1,0.33,α,geçmiş,gece α ≥ 0.30 (G5 P90)
@@ -65,8 +65,10 @@ TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-29 
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 00:00:00+00:00,2026-10-30 00:00:00+00:00,1,0.31,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 17:00:00+00:00,2026-10-31 02:00:00+00:00,10,0.36,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-31 17:00:00+00:00,2026-10-31 23:00:00+00:00,7,0.35,α,geçmiş,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-05 21:00:00+00:00,2026-11-06 02:00:00+00:00,6,0.33,α,gelecek,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 18:00:00+00:00,2026-11-08 02:00:00+00:00,9,0.34,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-05 22:00:00+00:00,2026-11-06 02:00:00+00:00,5,0.33,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-06 17:00:00+00:00,2026-11-06 18:00:00+00:00,2,0.4,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 02:00:00+00:00,2026-11-07 02:00:00+00:00,1,0.37,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 17:00:00+00:00,2026-11-08 01:00:00+00:00,9,0.36,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-10 17:00:00+00:00,2026-11-11 00:00:00+00:00,8,0.36,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-12 17:00:00+00:00,2026-11-12 22:00:00+00:00,6,0.34,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-27 00:00:00+00:00,2026-10-27 03:00:00+00:00,4,-10.15,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
@@ -74,8 +76,7 @@ TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-28 15:00:00+00
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-10-26 19:00:00+00:00,2026-10-26 22:00:00+00:00,4,18.65,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-10-28 01:00:00+00:00,2026-10-28 01:00:00+00:00,1,6.63,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-10-29 00:00:00+00:00,2026-10-29 00:00:00+00:00,1,6.96,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-03 09:00:00+00:00,2026-11-03 09:00:00+00:00,1,9.87,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-04 02:00:00+00:00,2026-11-04 02:00:00+00:00,1,6.04,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-03 08:00:00+00:00,2026-11-03 09:00:00+00:00,2,10.44,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,İklimsel Aşırı Rüzgâr (≥P95),2026-10-27 00:00:00+00:00,2026-10-27 00:00:00+00:00,1,13.2,m/s,geçmiş,ERA5 P95 = 12.2 m/s (G5)
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-23 17:00:00+00:00,2026-10-24 02:00:00+00:00,10,0.36,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-25 17:00:00+00:00,2026-10-25 17:00:00+00:00,1,0.33,α,geçmiş,gece α ≥ 0.30 (G5 P90)
@@ -86,15 +87,18 @@ TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-29 
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 00:00:00+00:00,2026-10-30 00:00:00+00:00,1,0.31,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 17:00:00+00:00,2026-10-31 02:00:00+00:00,10,0.36,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-31 17:00:00+00:00,2026-10-31 23:00:00+00:00,7,0.35,α,geçmiş,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-05 21:00:00+00:00,2026-11-06 02:00:00+00:00,6,0.33,α,gelecek,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 18:00:00+00:00,2026-11-08 02:00:00+00:00,9,0.34,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-05 22:00:00+00:00,2026-11-06 02:00:00+00:00,5,0.33,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-06 17:00:00+00:00,2026-11-06 18:00:00+00:00,2,0.4,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 02:00:00+00:00,2026-11-07 02:00:00+00:00,1,0.37,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 17:00:00+00:00,2026-11-08 01:00:00+00:00,9,0.36,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-10 17:00:00+00:00,2026-11-11 00:00:00+00:00,8,0.36,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-12 17:00:00+00:00,2026-11-12 22:00:00+00:00,6,0.34,α,gelecek,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-27 02:00:00+00:00,2026-10-27 04:00:00+00:00,3,-9.15,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-08 07:00:00+00:00,2026-11-08 07:00:00+00:00,1,-6.11,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-26 20:00:00+00:00,2026-10-26 22:00:00+00:00,3,14.2,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-28 01:00:00+00:00,2026-10-28 01:00:00+00:00,1,6.79,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-07 06:00:00+00:00,2026-11-07 06:00:00+00:00,1,6.33,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-27 02:00:00+00:00,2026-10-27 04:00:00+00:00,3,-9.79,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-28 15:00:00+00:00,2026-10-28 15:00:00+00:00,1,-6.01,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-08 07:00:00+00:00,2026-11-08 07:00:00+00:00,1,-6.35,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-26 19:00:00+00:00,2026-10-26 22:00:00+00:00,4,14.39,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-28 01:00:00+00:00,2026-10-28 01:00:00+00:00,1,6.69,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-03 09:00:00+00:00,2026-11-03 09:00:00+00:00,1,6.15,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M5_Hibrit_GFS_YZ,İklimsel Aşırı Rüzgâr (≥P95),2026-10-27 00:00:00+00:00,2026-10-27 00:00:00+00:00,1,13.2,m/s,geçmiş,ERA5 P95 = 12.2 m/s (G5)
 TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-23 17:00:00+00:00,2026-10-24 02:00:00+00:00,10,0.36,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-25 17:00:00+00:00,2026-10-25 17:00:00+00:00,1,0.33,α,geçmiş,gece α ≥ 0.30 (G5 P90)
@@ -105,13 +109,15 @@ TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-29 17
 TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 00:00:00+00:00,2026-10-30 00:00:00+00:00,1,0.31,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 17:00:00+00:00,2026-10-31 02:00:00+00:00,10,0.36,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-31 17:00:00+00:00,2026-10-31 23:00:00+00:00,7,0.35,α,geçmiş,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-05 21:00:00+00:00,2026-11-06 02:00:00+00:00,6,0.33,α,gelecek,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 18:00:00+00:00,2026-11-08 02:00:00+00:00,9,0.34,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-05 22:00:00+00:00,2026-11-06 02:00:00+00:00,5,0.33,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-06 17:00:00+00:00,2026-11-06 18:00:00+00:00,2,0.4,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 02:00:00+00:00,2026-11-07 02:00:00+00:00,1,0.37,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 17:00:00+00:00,2026-11-08 01:00:00+00:00,9,0.36,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-10 17:00:00+00:00,2026-11-11 00:00:00+00:00,8,0.36,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-12 17:00:00+00:00,2026-11-12 22:00:00+00:00,6,0.34,α,gelecek,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-27 02:00:00+00:00,2026-10-27 03:00:00+00:00,2,-7.96,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-26 19:00:00+00:00,2026-10-26 22:00:00+00:00,4,15.22,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-04 03:00:00+00:00,2026-11-04 03:00:00+00:00,1,6.49,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-27 02:00:00+00:00,2026-10-27 03:00:00+00:00,2,-8.71,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-26 19:00:00+00:00,2026-10-26 22:00:00+00:00,4,14.93,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-03 09:00:00+00:00,2026-11-03 09:00:00+00:00,1,6.19,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,İklimsel Aşırı Rüzgâr (≥P95),2026-10-27 00:00:00+00:00,2026-10-27 00:00:00+00:00,1,13.2,m/s,geçmiş,ERA5 P95 = 12.2 m/s (G5)
 TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-23 17:00:00+00:00,2026-10-24 02:00:00+00:00,10,0.36,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-25 17:00:00+00:00,2026-10-25 17:00:00+00:00,1,0.33,α,geçmiş,gece α ≥ 0.30 (G5 P90)
@@ -122,12 +128,13 @@ TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-29 1
 TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 00:00:00+00:00,2026-10-30 00:00:00+00:00,1,0.31,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 17:00:00+00:00,2026-10-31 02:00:00+00:00,10,0.36,α,geçmiş,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-31 17:00:00+00:00,2026-10-31 23:00:00+00:00,7,0.35,α,geçmiş,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-05 21:00:00+00:00,2026-11-06 02:00:00+00:00,6,0.33,α,gelecek,gece α ≥ 0.30 (G5 P90)
-TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 18:00:00+00:00,2026-11-08 02:00:00+00:00,9,0.34,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-05 22:00:00+00:00,2026-11-06 02:00:00+00:00,5,0.33,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-06 17:00:00+00:00,2026-11-06 18:00:00+00:00,2,0.4,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 02:00:00+00:00,2026-11-07 02:00:00+00:00,1,0.37,α,gelecek,gece α ≥ 0.30 (G5 P90)
+TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-07 17:00:00+00:00,2026-11-08 01:00:00+00:00,9,0.36,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-10 17:00:00+00:00,2026-11-11 00:00:00+00:00,8,0.36,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-12 17:00:00+00:00,2026-11-12 22:00:00+00:00,6,0.34,α,gelecek,gece α ≥ 0.30 (G5 P90)
 TR_Canakkale_RES,ERA5_Referans,Ani Rampa Artışı,2026-10-26 18:00:00+00:00,2026-10-26 20:00:00+00:00,3,12.31,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-10-18 12:00:00+00:00,2026-10-18 14:00:00+00:00,3,-13.35,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-10-19 10:00:00+00:00,2026-10-19 14:00:00+00:00,5,-13.24,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-13.42,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-13.23,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
@@ -141,7 +148,7 @@ TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-10-28 10:00:00+00:00,2026-1
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-10-29 11:00:00+00:00,2026-10-29 13:00:00+00:00,3,-9.18,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-10-30 10:00:00+00:00,2026-10-30 14:00:00+00:00,5,-12.74,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-10-31 09:00:00+00:00,2026-10-31 14:00:00+00:00,6,-6.9,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 13:00:00+00:00,2,-8.33,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 13:00:00+00:00,2,-8.33,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-11-02 10:00:00+00:00,2026-11-02 14:00:00+00:00,5,-11.1,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-12.68,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M1_GFS_Temel,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-12.71,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -189,7 +196,6 @@ TR_Konya_GES,M1_GFS_Temel,Ani Rampa Artışı,2026-11-16 04:00:00+00:00,2026-11-
 TR_Konya_GES,M1_GFS_Temel,Bulut Çöküşü,2026-10-26 10:00:00+00:00,2026-10-26 10:00:00+00:00,1,-0.37,Δkt/3sa,geçmiş,berraklık indeksi düşüşü ≥ 0.35
 TR_Konya_GES,M1_GFS_Temel,Bulut Çöküşü,2026-11-06 10:00:00+00:00,2026-11-06 10:00:00+00:00,1,-0.45,Δkt/3sa,gelecek,berraklık indeksi düşüşü ≥ 0.35
 TR_Konya_GES,M1_GFS_Temel,Toz/Aerosol Olayı,2026-10-26 19:00:00+00:00,2026-10-26 23:00:00+00:00,5,0.31,AOD,geçmiş,CAMS AOD ≥ P95 = 0.27
-TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-10-18 12:00:00+00:00,2026-10-18 14:00:00+00:00,3,-12.14,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-10-19 10:00:00+00:00,2026-10-19 14:00:00+00:00,5,-12.43,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-12.59,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-12.48,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
@@ -203,7 +209,7 @@ TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,2026-
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-10-29 11:00:00+00:00,2026-10-29 13:00:00+00:00,3,-5.5,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-10-30 12:00:00+00:00,2026-10-30 14:00:00+00:00,3,-6.36,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-10-31 11:00:00+00:00,2026-10-31 14:00:00+00:00,4,-9.36,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-7.53,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-7.53,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-11-02 11:00:00+00:00,2026-11-02 14:00:00+00:00,4,-10.18,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-11-03 11:00:00+00:00,2026-11-03 14:00:00+00:00,4,-10.87,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Düşüşü,2026-11-04 11:00:00+00:00,2026-11-04 14:00:00+00:00,4,-9.61,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -243,7 +249,6 @@ TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Artışı,2026-11-14 05:00:00+00:00,2026-11
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Artışı,2026-11-15 04:00:00+00:00,2026-11-15 07:00:00+00:00,4,7.79,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Ani Rampa Artışı,2026-11-16 04:00:00+00:00,2026-11-16 06:00:00+00:00,3,6.53,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M2_AIFS_Temel,Toz/Aerosol Olayı,2026-10-26 19:00:00+00:00,2026-10-26 23:00:00+00:00,5,0.31,AOD,geçmiş,CAMS AOD ≥ P95 = 0.27
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-18 12:00:00+00:00,2026-10-18 14:00:00+00:00,3,-13.27,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-19 10:00:00+00:00,2026-10-19 14:00:00+00:00,5,-12.98,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-13.09,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-13.02,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
@@ -257,14 +262,14 @@ TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-29 10:00:00+00:00,2026-10-29 12:00:00+00:00,3,-11.77,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-30 12:00:00+00:00,2026-10-30 14:00:00+00:00,3,-6.35,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-10-31 10:00:00+00:00,2026-10-31 14:00:00+00:00,5,-8.29,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-8.8,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-02 11:00:00+00:00,2026-11-02 14:00:00+00:00,4,-11.63,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-11.48,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-11.46,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-05 12:00:00+00:00,2026-11-05 14:00:00+00:00,3,-5.85,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-06 10:00:00+00:00,2026-11-06 14:00:00+00:00,5,-8.87,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-07 10:00:00+00:00,2026-11-07 14:00:00+00:00,5,-10.41,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-08 11:00:00+00:00,2026-11-08 14:00:00+00:00,4,-9.65,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-9.42,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-02 10:00:00+00:00,2026-11-02 14:00:00+00:00,5,-11.51,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-12.42,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-10.87,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-05 12:00:00+00:00,2026-11-05 14:00:00+00:00,3,-5.92,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-06 11:00:00+00:00,2026-11-06 13:00:00+00:00,3,-6.68,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-07 10:00:00+00:00,2026-11-07 14:00:00+00:00,5,-10.0,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-08 11:00:00+00:00,2026-11-08 14:00:00+00:00,4,-9.51,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-09 10:00:00+00:00,2026-11-09 14:00:00+00:00,5,-13.37,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-10 10:00:00+00:00,2026-11-10 14:00:00+00:00,5,-13.38,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Düşüşü,2026-11-11 11:00:00+00:00,2026-11-11 14:00:00+00:00,4,-11.0,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -284,13 +289,13 @@ TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-28 05:00:00+00:00,20
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-29 06:00:00+00:00,2026-10-29 08:00:00+00:00,3,9.28,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-31 04:00:00+00:00,2026-10-31 07:00:00+00:00,4,10.55,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-01 04:00:00+00:00,2026-11-01 06:00:00+00:00,3,7.74,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-02 04:00:00+00:00,2026-11-02 07:00:00+00:00,4,9.96,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-03 04:00:00+00:00,2026-11-03 07:00:00+00:00,4,11.34,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-04 04:00:00+00:00,2026-11-04 07:00:00+00:00,4,10.98,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-05 05:00:00+00:00,2026-11-05 06:00:00+00:00,2,4.83,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-06 04:00:00+00:00,2026-11-06 07:00:00+00:00,4,8.52,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-07 04:00:00+00:00,2026-11-07 07:00:00+00:00,4,8.82,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-08 04:00:00+00:00,2026-11-08 07:00:00+00:00,4,6.75,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-02 04:00:00+00:00,2026-11-02 07:00:00+00:00,4,9.92,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-03 04:00:00+00:00,2026-11-03 07:00:00+00:00,4,11.19,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-04 04:00:00+00:00,2026-11-04 07:00:00+00:00,4,11.13,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-05 05:00:00+00:00,2026-11-05 05:00:00+00:00,1,4.23,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-06 05:00:00+00:00,2026-11-06 07:00:00+00:00,3,5.65,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-07 04:00:00+00:00,2026-11-07 07:00:00+00:00,4,8.61,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-08 04:00:00+00:00,2026-11-08 07:00:00+00:00,4,7.4,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-09 04:00:00+00:00,2026-11-09 07:00:00+00:00,4,12.18,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-10 04:00:00+00:00,2026-11-10 07:00:00+00:00,4,12.12,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-11 04:00:00+00:00,2026-11-11 07:00:00+00:00,4,8.58,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -298,7 +303,6 @@ TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-13 05:00:00+00:00,20
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-14 04:00:00+00:00,2026-11-14 07:00:00+00:00,4,11.06,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-15 04:00:00+00:00,2026-11-15 07:00:00+00:00,4,10.97,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M3_OrtaOlcek_Fizik,Toz/Aerosol Olayı,2026-10-26 19:00:00+00:00,2026-10-26 23:00:00+00:00,5,0.31,AOD,geçmiş,CAMS AOD ≥ P95 = 0.27
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-18 12:00:00+00:00,2026-10-18 14:00:00+00:00,3,-12.32,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-19 10:00:00+00:00,2026-10-19 14:00:00+00:00,5,-12.3,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-12.5,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-12.35,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
@@ -312,14 +316,14 @@ TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-29 10:00:00+00:00,2026-10-29 12:00:00+00:00,3,-10.96,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-30 13:00:00+00:00,2026-10-30 14:00:00+00:00,2,-6.2,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-10-31 10:00:00+00:00,2026-10-31 14:00:00+00:00,5,-8.05,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-8.51,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-02 11:00:00+00:00,2026-11-02 14:00:00+00:00,4,-11.03,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-11.05,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-11.11,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-05 12:00:00+00:00,2026-11-05 14:00:00+00:00,3,-5.99,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-06 10:00:00+00:00,2026-11-06 14:00:00+00:00,5,-8.98,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-07 10:00:00+00:00,2026-11-07 14:00:00+00:00,5,-10.47,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-08 11:00:00+00:00,2026-11-08 14:00:00+00:00,4,-9.98,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-9.05,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-02 10:00:00+00:00,2026-11-02 14:00:00+00:00,5,-10.92,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-11.93,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-10.56,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-05 12:00:00+00:00,2026-11-05 14:00:00+00:00,3,-6.08,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-06 11:00:00+00:00,2026-11-06 13:00:00+00:00,3,-6.86,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-07 10:00:00+00:00,2026-11-07 14:00:00+00:00,5,-10.21,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-08 11:00:00+00:00,2026-11-08 14:00:00+00:00,4,-9.84,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-09 10:00:00+00:00,2026-11-09 14:00:00+00:00,5,-13.36,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-10 10:00:00+00:00,2026-11-10 14:00:00+00:00,5,-13.11,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Düşüşü,2026-11-11 11:00:00+00:00,2026-11-11 14:00:00+00:00,4,-10.88,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -339,13 +343,13 @@ TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-10-28 05:00:00+00:00,20
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-10-29 05:00:00+00:00,2026-10-29 08:00:00+00:00,4,8.81,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-10-31 04:00:00+00:00,2026-10-31 07:00:00+00:00,4,10.3,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-01 04:00:00+00:00,2026-11-01 06:00:00+00:00,3,7.59,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-02 04:00:00+00:00,2026-11-02 07:00:00+00:00,4,9.73,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-03 04:00:00+00:00,2026-11-03 07:00:00+00:00,4,10.77,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-04 04:00:00+00:00,2026-11-04 07:00:00+00:00,4,10.69,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-05 05:00:00+00:00,2026-11-05 06:00:00+00:00,2,4.99,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-06 04:00:00+00:00,2026-11-06 07:00:00+00:00,4,8.54,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-07 04:00:00+00:00,2026-11-07 07:00:00+00:00,4,8.95,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-08 04:00:00+00:00,2026-11-08 07:00:00+00:00,4,6.98,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-02 04:00:00+00:00,2026-11-02 07:00:00+00:00,4,9.69,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-03 04:00:00+00:00,2026-11-03 07:00:00+00:00,4,10.85,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-04 04:00:00+00:00,2026-11-04 07:00:00+00:00,4,10.8,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-05 05:00:00+00:00,2026-11-05 05:00:00+00:00,1,4.38,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-06 04:00:00+00:00,2026-11-06 07:00:00+00:00,4,5.87,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-07 04:00:00+00:00,2026-11-07 07:00:00+00:00,4,8.9,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-08 04:00:00+00:00,2026-11-08 07:00:00+00:00,4,7.64,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-09 04:00:00+00:00,2026-11-09 07:00:00+00:00,4,12.5,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-10 04:00:00+00:00,2026-11-10 07:00:00+00:00,4,12.24,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-11 04:00:00+00:00,2026-11-11 07:00:00+00:00,4,8.55,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -353,54 +357,53 @@ TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-13 05:00:00+00:00,20
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-14 04:00:00+00:00,2026-11-14 07:00:00+00:00,4,10.84,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Ani Rampa Artışı,2026-11-15 04:00:00+00:00,2026-11-15 07:00:00+00:00,4,10.89,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M4_OrtaOlcek_Mikro,Toz/Aerosol Olayı,2026-10-26 19:00:00+00:00,2026-10-26 23:00:00+00:00,5,0.31,AOD,geçmiş,CAMS AOD ≥ P95 = 0.27
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-18 12:00:00+00:00,2026-10-18 14:00:00+00:00,3,-12.02,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-19 10:00:00+00:00,2026-10-19 14:00:00+00:00,5,-12.28,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-12.5,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-12.04,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-22 10:00:00+00:00,2026-10-22 14:00:00+00:00,5,-11.7,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-23 10:00:00+00:00,2026-10-23 14:00:00+00:00,5,-11.8,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-24 10:00:00+00:00,2026-10-24 14:00:00+00:00,5,-11.68,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-25 10:00:00+00:00,2026-10-25 14:00:00+00:00,5,-12.18,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-26 09:00:00+00:00,2026-10-26 13:00:00+00:00,5,-8.07,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-27 12:00:00+00:00,2026-10-27 14:00:00+00:00,3,-8.29,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,2026-10-28 14:00:00+00:00,3,-9.27,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-29 10:00:00+00:00,2026-10-29 13:00:00+00:00,4,-9.39,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-30 12:00:00+00:00,2026-10-30 14:00:00+00:00,3,-5.46,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-31 10:00:00+00:00,2026-10-31 14:00:00+00:00,5,-8.44,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-7.58,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-02 11:00:00+00:00,2026-11-02 14:00:00+00:00,4,-10.43,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-10.48,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-10.92,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-05 11:00:00+00:00,2026-11-05 13:00:00+00:00,3,-6.91,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-06 10:00:00+00:00,2026-11-06 14:00:00+00:00,5,-8.48,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-07 10:00:00+00:00,2026-11-07 14:00:00+00:00,5,-10.07,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-08 11:00:00+00:00,2026-11-08 14:00:00+00:00,4,-9.28,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-19 10:00:00+00:00,2026-10-19 14:00:00+00:00,5,-12.31,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-12.53,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-12.27,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-22 10:00:00+00:00,2026-10-22 14:00:00+00:00,5,-11.77,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-23 11:00:00+00:00,2026-10-23 14:00:00+00:00,4,-11.84,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-24 11:00:00+00:00,2026-10-24 14:00:00+00:00,4,-11.82,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-25 10:00:00+00:00,2026-10-25 14:00:00+00:00,5,-12.21,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-26 09:00:00+00:00,2026-10-26 14:00:00+00:00,6,-7.82,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-27 12:00:00+00:00,2026-10-27 14:00:00+00:00,3,-8.13,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,2026-10-28 14:00:00+00:00,3,-9.04,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-29 10:00:00+00:00,2026-10-29 13:00:00+00:00,4,-9.36,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-30 12:00:00+00:00,2026-10-30 14:00:00+00:00,3,-5.75,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-31 10:00:00+00:00,2026-10-31 14:00:00+00:00,5,-8.18,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-7.96,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-02 11:00:00+00:00,2026-11-02 14:00:00+00:00,4,-10.59,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-11.27,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-10.45,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-05 12:00:00+00:00,2026-11-05 14:00:00+00:00,3,-6.61,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-06 10:00:00+00:00,2026-11-06 13:00:00+00:00,4,-6.65,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-07 10:00:00+00:00,2026-11-07 14:00:00+00:00,5,-9.8,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-08 11:00:00+00:00,2026-11-08 14:00:00+00:00,4,-9.07,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-09 10:00:00+00:00,2026-11-09 14:00:00+00:00,5,-12.51,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-10 10:00:00+00:00,2026-11-10 14:00:00+00:00,5,-12.4,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-11 11:00:00+00:00,2026-11-11 14:00:00+00:00,4,-10.09,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-13 11:00:00+00:00,2026-11-13 13:00:00+00:00,3,-6.63,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-14 10:00:00+00:00,2026-11-14 14:00:00+00:00,5,-11.54,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-11-15 11:00:00+00:00,2026-11-15 14:00:00+00:00,4,-10.69,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-19 03:00:00+00:00,2026-10-19 07:00:00+00:00,5,11.17,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-20 03:00:00+00:00,2026-10-20 07:00:00+00:00,5,11.0,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-21 03:00:00+00:00,2026-10-21 07:00:00+00:00,5,10.61,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-22 03:00:00+00:00,2026-10-22 07:00:00+00:00,5,10.62,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-23 03:00:00+00:00,2026-10-23 07:00:00+00:00,5,10.57,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-24 04:00:00+00:00,2026-10-24 07:00:00+00:00,4,10.13,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-25 03:00:00+00:00,2026-10-25 07:00:00+00:00,5,11.01,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-26 04:00:00+00:00,2026-10-26 07:00:00+00:00,4,8.72,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-19 03:00:00+00:00,2026-10-19 07:00:00+00:00,5,11.09,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-20 03:00:00+00:00,2026-10-20 07:00:00+00:00,5,10.9,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-21 03:00:00+00:00,2026-10-21 07:00:00+00:00,5,10.57,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-22 03:00:00+00:00,2026-10-22 07:00:00+00:00,5,10.56,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-23 03:00:00+00:00,2026-10-23 07:00:00+00:00,5,10.52,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-24 04:00:00+00:00,2026-10-24 07:00:00+00:00,4,10.35,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-25 03:00:00+00:00,2026-10-25 07:00:00+00:00,5,11.05,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-26 04:00:00+00:00,2026-10-26 07:00:00+00:00,4,8.95,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-27 05:00:00+00:00,2026-10-27 06:00:00+00:00,2,5.03,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-28 05:00:00+00:00,2026-10-28 07:00:00+00:00,3,7.94,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-29 06:00:00+00:00,2026-10-29 08:00:00+00:00,3,7.95,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-31 04:00:00+00:00,2026-10-31 06:00:00+00:00,3,9.71,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-01 04:00:00+00:00,2026-11-01 06:00:00+00:00,3,7.15,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-02 04:00:00+00:00,2026-11-02 07:00:00+00:00,4,9.03,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-03 04:00:00+00:00,2026-11-03 07:00:00+00:00,4,10.21,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-04 04:00:00+00:00,2026-11-04 07:00:00+00:00,4,9.94,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-05 04:00:00+00:00,2026-11-05 06:00:00+00:00,3,5.99,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-06 04:00:00+00:00,2026-11-06 07:00:00+00:00,4,8.66,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-07 04:00:00+00:00,2026-11-07 07:00:00+00:00,4,8.96,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-08 04:00:00+00:00,2026-11-08 07:00:00+00:00,4,7.94,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-28 05:00:00+00:00,2026-10-28 07:00:00+00:00,3,7.85,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-29 06:00:00+00:00,2026-10-29 08:00:00+00:00,3,7.7,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-31 04:00:00+00:00,2026-10-31 06:00:00+00:00,3,9.74,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-01 04:00:00+00:00,2026-11-01 06:00:00+00:00,3,7.03,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-02 04:00:00+00:00,2026-11-02 07:00:00+00:00,4,9.0,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-03 04:00:00+00:00,2026-11-03 07:00:00+00:00,4,10.39,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-04 04:00:00+00:00,2026-11-04 07:00:00+00:00,4,10.11,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-05 04:00:00+00:00,2026-11-05 06:00:00+00:00,3,5.44,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-06 04:00:00+00:00,2026-11-06 07:00:00+00:00,4,6.62,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-07 04:00:00+00:00,2026-11-07 07:00:00+00:00,4,9.0,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-08 04:00:00+00:00,2026-11-08 07:00:00+00:00,4,7.93,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-09 04:00:00+00:00,2026-11-09 07:00:00+00:00,4,11.48,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-10 04:00:00+00:00,2026-11-10 07:00:00+00:00,4,11.17,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-11 04:00:00+00:00,2026-11-11 07:00:00+00:00,4,8.82,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -408,54 +411,53 @@ TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-13 04:00:00+00:00,2026
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-14 04:00:00+00:00,2026-11-14 07:00:00+00:00,4,10.24,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-11-15 04:00:00+00:00,2026-11-15 07:00:00+00:00,4,10.1,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M5_Hibrit_GFS_YZ,Toz/Aerosol Olayı,2026-10-26 19:00:00+00:00,2026-10-26 23:00:00+00:00,5,0.31,AOD,geçmiş,CAMS AOD ≥ P95 = 0.27
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-18 12:00:00+00:00,2026-10-18 14:00:00+00:00,3,-11.93,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-19 10:00:00+00:00,2026-10-19 14:00:00+00:00,5,-12.21,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-12.38,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-12.18,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-22 10:00:00+00:00,2026-10-22 14:00:00+00:00,5,-11.83,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-23 10:00:00+00:00,2026-10-23 14:00:00+00:00,5,-11.83,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-24 10:00:00+00:00,2026-10-24 14:00:00+00:00,5,-11.71,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-25 10:00:00+00:00,2026-10-25 14:00:00+00:00,5,-12.15,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-26 10:00:00+00:00,2026-10-26 14:00:00+00:00,5,-8.12,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-27 12:00:00+00:00,2026-10-27 14:00:00+00:00,3,-8.39,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,2026-10-28 14:00:00+00:00,3,-7.41,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-29 10:00:00+00:00,2026-10-29 12:00:00+00:00,3,-9.13,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-30 13:00:00+00:00,2026-10-30 14:00:00+00:00,2,-5.29,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-31 10:00:00+00:00,2026-10-31 14:00:00+00:00,5,-8.25,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-7.54,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-02 11:00:00+00:00,2026-11-02 14:00:00+00:00,4,-10.53,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-10.55,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-10.34,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-05 12:00:00+00:00,2026-11-05 13:00:00+00:00,2,-5.62,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-06 10:00:00+00:00,2026-11-06 14:00:00+00:00,5,-8.24,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-07 11:00:00+00:00,2026-11-07 14:00:00+00:00,4,-9.28,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-08 11:00:00+00:00,2026-11-08 14:00:00+00:00,4,-9.96,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-19 10:00:00+00:00,2026-10-19 14:00:00+00:00,5,-12.33,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-12.49,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-12.2,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-22 10:00:00+00:00,2026-10-22 14:00:00+00:00,5,-11.92,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-23 10:00:00+00:00,2026-10-23 14:00:00+00:00,5,-11.91,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-24 10:00:00+00:00,2026-10-24 14:00:00+00:00,5,-11.78,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-25 10:00:00+00:00,2026-10-25 14:00:00+00:00,5,-12.24,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-26 10:00:00+00:00,2026-10-26 14:00:00+00:00,5,-8.37,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-27 12:00:00+00:00,2026-10-27 14:00:00+00:00,3,-8.01,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,2026-10-28 14:00:00+00:00,3,-7.47,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-29 10:00:00+00:00,2026-10-29 12:00:00+00:00,3,-8.85,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-30 13:00:00+00:00,2026-10-30 14:00:00+00:00,2,-5.23,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-31 10:00:00+00:00,2026-10-31 14:00:00+00:00,5,-8.21,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-01 12:00:00+00:00,2026-11-01 14:00:00+00:00,3,-8.13,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-02 11:00:00+00:00,2026-11-02 14:00:00+00:00,4,-10.52,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-03 10:00:00+00:00,2026-11-03 14:00:00+00:00,5,-11.31,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-04 10:00:00+00:00,2026-11-04 14:00:00+00:00,5,-9.81,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-05 12:00:00+00:00,2026-11-05 14:00:00+00:00,3,-5.32,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-06 12:00:00+00:00,2026-11-06 13:00:00+00:00,2,-6.49,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-07 11:00:00+00:00,2026-11-07 14:00:00+00:00,4,-8.99,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-08 11:00:00+00:00,2026-11-08 14:00:00+00:00,4,-9.86,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-09 10:00:00+00:00,2026-11-09 14:00:00+00:00,5,-12.96,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-10 10:00:00+00:00,2026-11-10 14:00:00+00:00,5,-12.5,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-11 11:00:00+00:00,2026-11-11 14:00:00+00:00,4,-10.42,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-13 12:00:00+00:00,2026-11-13 13:00:00+00:00,2,-5.34,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-14 11:00:00+00:00,2026-11-14 14:00:00+00:00,4,-10.58,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-11-15 11:00:00+00:00,2026-11-15 14:00:00+00:00,4,-9.95,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-19 03:00:00+00:00,2026-10-19 07:00:00+00:00,5,11.04,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-20 03:00:00+00:00,2026-10-20 07:00:00+00:00,5,10.71,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-21 03:00:00+00:00,2026-10-21 07:00:00+00:00,5,10.49,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-22 03:00:00+00:00,2026-10-22 07:00:00+00:00,5,10.24,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-23 03:00:00+00:00,2026-10-23 07:00:00+00:00,5,10.31,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-24 04:00:00+00:00,2026-10-24 07:00:00+00:00,4,10.21,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-25 03:00:00+00:00,2026-10-25 07:00:00+00:00,5,10.73,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-26 04:00:00+00:00,2026-10-26 07:00:00+00:00,4,8.31,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-27 05:00:00+00:00,2026-10-27 08:00:00+00:00,4,5.66,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-28 05:00:00+00:00,2026-10-28 07:00:00+00:00,3,6.95,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-29 06:00:00+00:00,2026-10-29 08:00:00+00:00,3,7.36,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-19 03:00:00+00:00,2026-10-19 07:00:00+00:00,5,11.13,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-20 03:00:00+00:00,2026-10-20 07:00:00+00:00,5,10.9,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-21 03:00:00+00:00,2026-10-21 07:00:00+00:00,5,10.61,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-22 03:00:00+00:00,2026-10-22 07:00:00+00:00,5,10.44,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-23 03:00:00+00:00,2026-10-23 07:00:00+00:00,5,10.4,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-24 04:00:00+00:00,2026-10-24 07:00:00+00:00,4,10.38,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-25 03:00:00+00:00,2026-10-25 07:00:00+00:00,5,10.82,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-26 04:00:00+00:00,2026-10-26 07:00:00+00:00,4,8.41,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-27 05:00:00+00:00,2026-10-27 08:00:00+00:00,4,5.4,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-28 05:00:00+00:00,2026-10-28 07:00:00+00:00,3,6.88,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-29 06:00:00+00:00,2026-10-29 08:00:00+00:00,3,7.75,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-31 04:00:00+00:00,2026-10-31 06:00:00+00:00,3,9.29,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-01 04:00:00+00:00,2026-11-01 06:00:00+00:00,3,6.81,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-01 04:00:00+00:00,2026-11-01 06:00:00+00:00,3,6.73,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-02 04:00:00+00:00,2026-11-02 07:00:00+00:00,4,9.14,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-03 04:00:00+00:00,2026-11-03 07:00:00+00:00,4,10.17,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-04 04:00:00+00:00,2026-11-04 07:00:00+00:00,4,9.75,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-05 05:00:00+00:00,2026-11-05 06:00:00+00:00,2,4.93,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-06 04:00:00+00:00,2026-11-06 07:00:00+00:00,4,8.0,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-07 04:00:00+00:00,2026-11-07 07:00:00+00:00,4,7.89,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
-TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-08 04:00:00+00:00,2026-11-08 07:00:00+00:00,4,7.95,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-03 04:00:00+00:00,2026-11-03 07:00:00+00:00,4,10.35,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-04 04:00:00+00:00,2026-11-04 07:00:00+00:00,4,9.86,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-05 05:00:00+00:00,2026-11-05 05:00:00+00:00,1,4.3,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-06 05:00:00+00:00,2026-11-06 07:00:00+00:00,3,5.77,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-07 04:00:00+00:00,2026-11-07 07:00:00+00:00,4,7.8,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
+TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-08 04:00:00+00:00,2026-11-08 07:00:00+00:00,4,8.24,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-09 04:00:00+00:00,2026-11-09 07:00:00+00:00,4,11.59,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-10 04:00:00+00:00,2026-11-10 07:00:00+00:00,4,11.35,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-11 04:00:00+00:00,2026-11-11 07:00:00+00:00,4,9.02,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -463,7 +465,6 @@ TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-13 05:00:00+00:00,202
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-14 04:00:00+00:00,2026-11-14 07:00:00+00:00,4,8.89,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-15 04:00:00+00:00,2026-11-15 07:00:00+00:00,4,10.02,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,M6_Hibrit_AIFS_YZ,Toz/Aerosol Olayı,2026-10-26 19:00:00+00:00,2026-10-26 23:00:00+00:00,5,0.31,AOD,geçmiş,CAMS AOD ≥ P95 = 0.27
-TR_Konya_GES,ERA5_Referans,Ani Rampa Düşüşü,2026-10-18 12:00:00+00:00,2026-10-18 14:00:00+00:00,3,-12.0,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,ERA5_Referans,Ani Rampa Düşüşü,2026-10-19 11:00:00+00:00,2026-10-19 14:00:00+00:00,4,-10.79,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,ERA5_Referans,Ani Rampa Düşüşü,2026-10-20 10:00:00+00:00,2026-10-20 14:00:00+00:00,5,-12.28,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 TR_Konya_GES,ERA5_Referans,Ani Rampa Düşüşü,2026-10-21 10:00:00+00:00,2026-10-21 14:00:00+00:00,5,-12.15,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
@@ -586,6 +587,7 @@ UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-24 18:00:00+00
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-26 10:00:00+00:00,2026-10-26 13:00:00+00:00,4,37.83,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-26 18:00:00+00:00,2026-10-26 20:00:00+00:00,3,25.59,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-10-28 01:00:00+00:00,2026-10-28 01:00:00+00:00,1,10.25,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-08 22:00:00+00:00,2026-11-09 00:00:00+00:00,3,10.97,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-09 20:00:00+00:00,2026-11-09 21:00:00+00:00,2,10.53,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-13 09:00:00+00:00,2026-11-13 10:00:00+00:00,2,12.23,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Ani Rampa Artışı,2026-11-15 07:00:00+00:00,2026-11-15 09:00:00+00:00,3,13.07,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
@@ -599,7 +601,6 @@ UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,İklimsel Aşırı Rüzgâr (≥P95),2026-
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-22 20:00:00+00:00,2026-10-22 21:00:00+00:00,2,0.34,α,geçmiş,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-28 20:00:00+00:00,2026-10-29 01:00:00+00:00,6,0.37,α,geçmiş,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 04:00:00+00:00,2026-10-30 05:00:00+00:00,2,0.35,α,geçmiş,gece α ≥ 0.32 (G5 P90)
-UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-08 20:00:00+00:00,2026-11-08 20:00:00+00:00,1,0.32,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-09 20:00:00+00:00,2026-11-09 20:00:00+00:00,1,0.33,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-11 20:00:00+00:00,2026-11-12 05:00:00+00:00,10,0.4,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M3_OrtaOlcek_Fizik,Gece Düşük Seviyeli Jet (LLJ),2026-11-12 20:00:00+00:00,2026-11-12 23:00:00+00:00,4,0.34,α,gelecek,gece α ≥ 0.32 (G5 P90)
@@ -636,28 +637,28 @@ UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,İklimsel Aşırı Rüzgâr (≥P95),2026-
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-22 20:00:00+00:00,2026-10-22 21:00:00+00:00,2,0.34,α,geçmiş,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-28 20:00:00+00:00,2026-10-29 01:00:00+00:00,6,0.37,α,geçmiş,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 04:00:00+00:00,2026-10-30 05:00:00+00:00,2,0.35,α,geçmiş,gece α ≥ 0.32 (G5 P90)
-UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-08 20:00:00+00:00,2026-11-08 20:00:00+00:00,1,0.32,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-09 20:00:00+00:00,2026-11-09 20:00:00+00:00,1,0.33,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-11 20:00:00+00:00,2026-11-12 05:00:00+00:00,10,0.4,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-12 20:00:00+00:00,2026-11-12 23:00:00+00:00,4,0.34,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-14 04:00:00+00:00,2026-11-14 05:00:00+00:00,2,0.34,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-14 20:00:00+00:00,2026-11-14 21:00:00+00:00,2,0.32,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M4_OrtaOlcek_Mikro,Gece Düşük Seviyeli Jet (LLJ),2026-11-15 01:00:00+00:00,2026-11-15 02:00:00+00:00,2,0.34,α,gelecek,gece α ≥ 0.32 (G5 P90)
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-20 21:00:00+00:00,2026-10-20 23:00:00+00:00,3,-14.59,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-22 12:00:00+00:00,2026-10-22 14:00:00+00:00,3,-12.0,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-24 15:00:00+00:00,2026-10-24 17:00:00+00:00,3,-26.43,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-25 09:00:00+00:00,2026-10-25 11:00:00+00:00,3,-40.65,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-26 00:00:00+00:00,2026-10-26 05:00:00+00:00,6,-21.41,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-26 15:00:00+00:00,2026-10-26 16:00:00+00:00,2,-17.42,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-27 16:00:00+00:00,2026-10-27 20:00:00+00:00,5,-13.03,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-20 07:00:00+00:00,2026-10-20 07:00:00+00:00,1,11.58,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-21 22:00:00+00:00,2026-10-22 02:00:00+00:00,5,12.7,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-24 08:00:00+00:00,2026-10-24 11:00:00+00:00,4,27.44,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-24 19:00:00+00:00,2026-10-24 22:00:00+00:00,4,14.57,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-25 13:00:00+00:00,2026-10-25 15:00:00+00:00,3,38.44,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-26 10:00:00+00:00,2026-10-26 13:00:00+00:00,4,20.94,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-26 20:00:00+00:00,2026-10-26 22:00:00+00:00,3,16.94,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-27 08:00:00+00:00,2026-10-27 08:00:00+00:00,1,10.95,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-20 19:00:00+00:00,2026-10-20 23:00:00+00:00,5,-12.87,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-22 12:00:00+00:00,2026-10-22 14:00:00+00:00,3,-12.63,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-24 15:00:00+00:00,2026-10-24 17:00:00+00:00,3,-25.8,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-25 09:00:00+00:00,2026-10-25 11:00:00+00:00,3,-38.94,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-26 00:00:00+00:00,2026-10-26 05:00:00+00:00,6,-22.79,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-26 15:00:00+00:00,2026-10-26 16:00:00+00:00,2,-19.99,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-27 16:00:00+00:00,2026-10-27 20:00:00+00:00,5,-13.38,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,2026-10-28 12:00:00+00:00,1,-10.15,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-20 07:00:00+00:00,2026-10-20 07:00:00+00:00,1,11.54,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-21 22:00:00+00:00,2026-10-22 02:00:00+00:00,5,12.23,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-24 08:00:00+00:00,2026-10-24 11:00:00+00:00,4,28.63,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-24 18:00:00+00:00,2026-10-24 22:00:00+00:00,5,13.78,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-25 13:00:00+00:00,2026-10-25 15:00:00+00:00,3,38.5,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-26 10:00:00+00:00,2026-10-26 13:00:00+00:00,4,21.2,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-26 20:00:00+00:00,2026-10-26 22:00:00+00:00,3,18.1,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Ani Rampa Artışı,2026-10-27 08:00:00+00:00,2026-10-27 08:00:00+00:00,1,10.41,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Fırtına Kesintisi (Cut-Out),2026-10-25 12:00:00+00:00,2026-10-25 15:00:00+00:00,4,22.21,m/s,geçmiş,hub ≥ 25.0 m/s veya hamle ≥ 28.0 m/s
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,İklimsel Aşırı Rüzgâr (≥P95),2026-10-20 12:00:00+00:00,2026-10-20 20:00:00+00:00,9,14.23,m/s,geçmiş,ERA5 P95 = 12.4 m/s (G5)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,İklimsel Aşırı Rüzgâr (≥P95),2026-10-24 12:00:00+00:00,2026-10-24 16:00:00+00:00,5,19.59,m/s,geçmiş,ERA5 P95 = 12.4 m/s (G5)
@@ -668,28 +669,26 @@ UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,İklimsel Aşırı Rüzgâr (≥P95),2026-10
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-22 20:00:00+00:00,2026-10-22 21:00:00+00:00,2,0.34,α,geçmiş,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-28 20:00:00+00:00,2026-10-29 01:00:00+00:00,6,0.37,α,geçmiş,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 04:00:00+00:00,2026-10-30 05:00:00+00:00,2,0.35,α,geçmiş,gece α ≥ 0.32 (G5 P90)
-UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-08 20:00:00+00:00,2026-11-08 20:00:00+00:00,1,0.32,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-09 20:00:00+00:00,2026-11-09 20:00:00+00:00,1,0.33,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-11 20:00:00+00:00,2026-11-12 05:00:00+00:00,10,0.4,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-12 20:00:00+00:00,2026-11-12 23:00:00+00:00,4,0.34,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-14 04:00:00+00:00,2026-11-14 05:00:00+00:00,2,0.34,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-14 20:00:00+00:00,2026-11-14 21:00:00+00:00,2,0.32,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M5_Hibrit_GFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-15 01:00:00+00:00,2026-11-15 02:00:00+00:00,2,0.34,α,gelecek,gece α ≥ 0.32 (G5 P90)
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-20 18:00:00+00:00,2026-10-20 23:00:00+00:00,6,-14.2,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-22 13:00:00+00:00,2026-10-22 15:00:00+00:00,3,-11.93,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-24 15:00:00+00:00,2026-10-24 16:00:00+00:00,2,-16.19,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-20 18:00:00+00:00,2026-10-20 23:00:00+00:00,6,-14.8,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-22 13:00:00+00:00,2026-10-22 15:00:00+00:00,3,-12.07,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-24 14:00:00+00:00,2026-10-24 16:00:00+00:00,3,-15.47,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-25 09:00:00+00:00,2026-10-25 11:00:00+00:00,3,-48.3,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-26 00:00:00+00:00,2026-10-26 05:00:00+00:00,6,-21.58,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-27 15:00:00+00:00,2026-10-27 19:00:00+00:00,5,-13.42,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,2026-10-28 12:00:00+00:00,1,-11.11,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-20 07:00:00+00:00,2026-10-20 11:00:00+00:00,5,11.03,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-21 21:00:00+00:00,2026-10-21 23:00:00+00:00,3,15.58,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-24 07:00:00+00:00,2026-10-24 11:00:00+00:00,5,25.56,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-24 18:00:00+00:00,2026-10-24 19:00:00+00:00,2,17.39,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-25 13:00:00+00:00,2026-10-25 15:00:00+00:00,3,48.3,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-26 10:00:00+00:00,2026-10-26 13:00:00+00:00,4,16.36,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-26 20:00:00+00:00,2026-10-26 20:00:00+00:00,1,10.29,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-27 07:00:00+00:00,2026-10-27 07:00:00+00:00,1,11.05,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-26 00:00:00+00:00,2026-10-26 05:00:00+00:00,6,-21.31,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-27 16:00:00+00:00,2026-10-27 20:00:00+00:00,5,-12.86,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Düşüşü,2026-10-28 12:00:00+00:00,2026-10-28 12:00:00+00:00,1,-10.39,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-20 11:00:00+00:00,2026-10-20 11:00:00+00:00,1,10.49,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-21 21:00:00+00:00,2026-10-21 23:00:00+00:00,3,15.96,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-24 07:00:00+00:00,2026-10-24 11:00:00+00:00,5,25.68,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-24 18:00:00+00:00,2026-10-24 20:00:00+00:00,3,19.89,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-25 13:00:00+00:00,2026-10-25 15:00:00+00:00,3,47.64,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-26 10:00:00+00:00,2026-10-26 13:00:00+00:00,4,17.92,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
+UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-10-27 07:00:00+00:00,2026-10-27 07:00:00+00:00,1,10.2,MW/3sa,geçmiş,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Ani Rampa Artışı,2026-11-13 09:00:00+00:00,2026-11-13 09:00:00+00:00,1,10.62,MW/3sa,gelecek,≥%20 kurulu güç / 3 saat
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Fırtına Kesintisi (Cut-Out),2026-10-25 12:00:00+00:00,2026-10-25 15:00:00+00:00,4,22.21,m/s,geçmiş,hub ≥ 25.0 m/s veya hamle ≥ 28.0 m/s
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,İklimsel Aşırı Rüzgâr (≥P95),2026-10-20 12:00:00+00:00,2026-10-20 20:00:00+00:00,9,14.23,m/s,geçmiş,ERA5 P95 = 12.4 m/s (G5)
@@ -701,7 +700,6 @@ UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,İklimsel Aşırı Rüzgâr (≥P95),2026-1
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-22 20:00:00+00:00,2026-10-22 21:00:00+00:00,2,0.34,α,geçmiş,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-28 20:00:00+00:00,2026-10-29 01:00:00+00:00,6,0.37,α,geçmiş,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-10-30 04:00:00+00:00,2026-10-30 05:00:00+00:00,2,0.35,α,geçmiş,gece α ≥ 0.32 (G5 P90)
-UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-08 20:00:00+00:00,2026-11-08 20:00:00+00:00,1,0.32,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-09 20:00:00+00:00,2026-11-09 20:00:00+00:00,1,0.33,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-11 20:00:00+00:00,2026-11-12 05:00:00+00:00,10,0.4,α,gelecek,gece α ≥ 0.32 (G5 P90)
 UK_HillOfTowie_RES,M6_Hibrit_AIFS_YZ,Gece Düşük Seviyeli Jet (LLJ),2026-11-12 20:00:00+00:00,2026-11-12 23:00:00+00:00,4,0.34,α,gelecek,gece α ≥ 0.32 (G5 P90)
