@@ -380,8 +380,6 @@ function renderTab4() {
 }
 
 // ---------------------------------------------------------------- yeniden analiz
-// Üç kip: (1) GitHub Pages: Actions workflow_dispatch (kişisel erişim anahtarı gerekir),
-//         (2) yerel sunucu (python src/serve.py): /api/refresh, (3) file://: yalnızca bilgi.
 const WORKFLOW = 'update_observatory.yml';
 const TOKEN_KEY = 'zincir_gh_token';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -391,9 +389,7 @@ function rmsg(t, bad) {
   e.textContent = t;
 }
 function ghRepo() {
-  const owner = location.hostname.split('.')[0];
-  const repo = location.pathname.split('/').filter(Boolean)[0];
-  return { owner, repo };
+  return { owner: 'muratyesil552', repo: 'muratyesil552.github.io' };
 }
 async function loadFresh() {
   const r = await fetch('web_data/observability_data.json?t=' + Date.now(), { cache: 'no-store' });
@@ -420,7 +416,10 @@ async function refreshGithub() {
   const api = `https://api.github.com/repos/${owner}/${repo}`;
   const old = D.meta.generated_at;
   const rr = await fetch(api, { headers: H });
-  if (!rr.ok) { if (rr.status === 401 || rr.status === 403 || rr.status === 404) localStorage.removeItem(TOKEN_KEY); throw new Error('GitHub erişimi reddedildi (HTTP ' + rr.status + '). Anahtarı kontrol edin; yanlış anahtar silindi.'); }
+  if (!rr.ok) {
+    if (rr.status === 401) localStorage.removeItem(TOKEN_KEY);
+    throw new Error(`GitHub erişimi reddedildi (HTTP ${rr.status}) - repo: ${owner}/${repo}. Anahtarınızı kontrol edin.`);
+  }
   const branch = (await rr.json()).default_branch;
   const t0 = new Date(Date.now() - 5000).toISOString();
   const dr = await fetch(`${api}/actions/workflows/${WORKFLOW}/dispatches`, { method: 'POST', headers: H, body: JSON.stringify({ ref: branch }) });
