@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZİNCİR-TR Gözlemevi | Rüzgâr ve Güneş Enerjisi Tahmin &amp; Erken Uyarı</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { darkMode: 'class' };</script>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="web_data/data_bundle.js"></script>
+<style>
+  body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .tab-btn { padding: .5rem .9rem; border-radius: .5rem; font-size: .875rem; font-weight: 600; cursor: pointer; }
+  .tab-btn.active { background: #2563eb; color: #fff; }
+  .tab-btn:not(.active) { background: rgba(148,163,184,.15); }
+  .card { border-radius: .75rem; padding: .9rem 1rem; border: 1px solid rgba(148,163,184,.25); background: rgba(148,163,184,.08); }
+  .badge { display: inline-flex; gap: .4rem; align-items: center; padding: .25rem .6rem; border-radius: 9999px; font-size: .75rem; font-weight: 600; margin: .15rem .25rem .15rem 0; }
+  table.t { width: 100%; border-collapse: collapse; font-size: .8rem; }
+  table.t th, table.t td { padding: .35rem .5rem; border-bottom: 1px solid rgba(148,163,184,.25); text-align: right; white-space: nowrap; }
+  table.t th:first-child, table.t td:first-child { text-align: left; }
+  table.t th { position: sticky; top: 0; background: rgba(30,41,59,.95); color: #e2e8f0; }
+  html:not(.dark) table.t th { background: #e2e8f0; color: #0f172a; }
+  .best { color: #16a34a; font-weight: 700; }
+  .scroll { max-height: 26rem; overflow: auto; }
+  .katex-display { overflow-x: auto; overflow-y: hidden; }
+</style>
+</head>
+<body class="bg-slate-100 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+<div class="max-w-7xl mx-auto px-3 py-4">
+
+  <header class="flex flex-wrap items-center justify-between gap-3 mb-4">
+    <div>
+      <h1 class="text-xl md:text-2xl font-bold">ZİNCİR-TR Gözlemevi</h1>
+      <p class="text-xs md:text-sm text-slate-500 dark:text-slate-400">Çok ölçekli, geri beslemeli hibrit rüzgâr ve güneş enerjisi tahmini, +6 saat / +16 gün erken uyarı ve iklimsel verim (P50/P90)</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span id="gen" class="text-xs text-slate-500 dark:text-slate-400"></span>
+      <button id="refreshBtn" class="tab-btn" style="background:#16a34a;color:#fff" title="Verileri yeniden çekip analizi baştan çalıştırır">⟳ Yeniden Analiz</button>
+      <button id="tokBtn" class="tab-btn" title="GitHub erişim anahtarını ayarla / sil">🔑</button>
+      <button id="themeBtn" class="tab-btn">Aydınlık / Karanlık</button>
+    </div>
+  </header>
+
+  <div id="err" class="hidden card border-red-500 text-red-500 mb-3"></div>
+  <div id="rstat" class="hidden card border-green-600 mb-3 text-sm"></div>
+
+  <div id="siteSel" class="flex flex-wrap gap-2 mb-4"></div>
+
+  <!-- 1) CANLI DURUM + ERKEN UYARI -->
+  <section class="mb-4">
+    <div id="cards" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2 mb-3"></div>
+    <div class="card">
+      <div class="font-bold mb-1">+6 Saat ve +24 Saat Acil Kesinti &amp; Anomali Radarı <span class="text-xs font-normal text-slate-500 dark:text-slate-400">(ana model: M6 Hibrit-AIFS, saatler TSİ)</span></div>
+      <div class="text-sm font-semibold mt-2">Önümüzdeki 6 saat</div><div id="radar6"></div>
+      <div class="text-sm font-semibold mt-2">Önümüzdeki 24 saat</div><div id="radar24"></div>
+    </div>
+  </section>
+
+  <nav class="flex flex-wrap gap-2 mb-3" id="tabs">
+    <button class="tab-btn active" data-tab="t1">+6 / +72 Saat Yakın Plan</button>
+    <button class="tab-btn" data-tab="t2">+2 Hafta (16 Gün) ve Anomali Takvimi</button>
+    <button class="tab-btn" data-tab="t3">Doğrulama ve Ablasyon Karnesi</button>
+    <button class="tab-btn" data-tab="t4">İklimsel Verim P50/P90 ve Metodoloji</button>
+  </nav>
+
+  <!-- SEKME 1 -->
+  <section id="t1" class="tab">
+    <div class="card mb-3"><div class="font-semibold mb-1">Grafik 1: Saatlik Üretim Tahmini (MW), 72 saat</div><div id="g1" style="height:420px"></div>
+      <p class="text-xs text-slate-500 dark:text-slate-400">M6 etrafındaki gölge, Uyarlamalı Konformal Tahmin (ACI) ile üretilen P10-P90 bandıdır. Bant, son ~2 haftalık kısa vade hata dağılımından kalibre edilir; uzun öngörü süreleri için gerçek belirsizlik daha geniş olabilir.</p></div>
+    <div class="grid md:grid-cols-2 gap-3">
+      <div class="card"><div id="g2title" class="font-semibold mb-1">Grafik 2: Meteoroloji</div><div id="g2" style="height:360px"></div></div>
+      <div class="card"><div id="g2btitle" class="font-semibold mb-1"></div><div id="g2b" style="height:360px"></div></div>
+    </div>
+  </section>
+
+  <!-- SEKME 2 -->
+  <section id="t2" class="tab hidden">
+    <div class="card mb-3"><div class="font-semibold mb-1">16 Günlük Üretim Projeksiyonu (MW)</div><div id="g3" style="height:400px"></div></div>
+    <div class="card mb-3"><div id="g4title" class="font-semibold mb-1"></div><div id="g4" style="height:320px"></div></div>
+    <div class="card mb-3"><div class="font-semibold mb-2">Model × Olay Türü Sayısı (önümüzdeki 16 gün)</div><div id="matrix" class="scroll"></div></div>
+    <div class="card"><div class="flex flex-wrap items-center gap-3 mb-2">
+      <div class="font-semibold">2 Haftalık Anomali / Kesinti Zaman Çizelgesi</div>
+      <select id="fType" class="text-sm rounded px-2 py-1 bg-slate-200 dark:bg-slate-700"></select>
+      <select id="fModel" class="text-sm rounded px-2 py-1 bg-slate-200 dark:bg-slate-700"></select>
+      <span id="evCount" class="text-xs text-slate-500 dark:text-slate-400"></span></div>
+      <div id="evTable" class="scroll"></div></div>
+  </section>
+
+  <!-- SEKME 3 -->
+  <section id="t3" class="tab hidden">
+    <div class="card mb-3"><div class="font-semibold mb-1">Hayalet Çizgi (Ghost Line): Son 14 Gün, Gerçekleşen/Referans ve 6 Model + Sapma (Hata = Tahmin − Referans)</div>
+      <div id="g5" style="height:560px"></div>
+      <p id="refNote" class="text-xs text-slate-500 dark:text-slate-400"></p></div>
+    <div class="card mb-3"><div class="font-semibold mb-2">Liderlik ve Ablasyon Tablosu (M1 → M6)</div><div id="lb" class="scroll"></div></div>
+    <div class="card"><div class="font-semibold mb-1">Ablasyon: Halkalar Eklendikçe Hata ve Ramp-DA</div><div id="g6" style="height:380px"></div></div>
+  </section>
+
+  <!-- SEKME 4 -->
+  <section id="t4" class="tab hidden">
+    <div class="grid lg:grid-cols-2 gap-3 mb-3">
+      <div class="card"><div class="font-semibold mb-2">Yıllık Enerji Üretimi: Klasik MCP ve G4 Hibrit Düzeltmeli MCP</div><div id="clTable"></div><p id="clNote" class="text-xs mt-2 text-slate-500 dark:text-slate-400"></p></div>
+      <div class="card"><div class="font-semibold mb-1">Kayıp Ağacı (yıllık ortalama, MWh/yıl)</div><div id="g7" style="height:360px"></div></div>
+    </div>
+    <div class="card mb-3"><div class="font-semibold mb-1">Yıllık AEP (ERA5, MWh/yıl): Ham Eğri ve Tam Fizik Zinciri</div><div id="g8" style="height:300px"></div></div>
+
+    <div class="card" id="method">
+      <h2 class="font-bold text-lg mb-2">Akademik Metodoloji</h2>
+      <p class="text-sm mb-2">Sistem 4 ölçek halkasını (A-D) ve 3 geri besleme döngüsünü (G2, G4, G5) birleştirir. Tüm girdiler Open-Meteo API'lerinden gelen gerçek verilerdir (Forecast, Historical Forecast, ERA5 Archive, CAMS Air Quality); sentetik veri kullanılmaz.</p>
+      <div class="text-sm space-y-3">
+        <div><b>Faktör A (~25 km, küresel sürücüler):</b> GFS (fizik tabanlı), ECMWF AIFS (YZ tabanlı), ERA5 (iklimsel referans). Gücün ham dönüşümü: \(P = f_{\mathrm{curve}}(v_{hub})\).</div>
+        <div><b>Faktör B (2.5-9 km, orta ölçek):</b> ECMWF IFS ve ICON girdilerinin ortalaması (ICON ufku dışında yalnız IFS); CAMS aerosol optik derinliği ve toz.</div>
+        <div><b>Faktör C (küçük ölçek dönüşüm):</b> Dinamik dikey kayma üssü ve hub yüksekliğine taşıma:
+$$\alpha_m(t)=\operatorname{clip}\!\left(\frac{\ln\!\big(v_{up}(t)/\max(v_{10}(t),0.5)\big)}{\ln(z_{up}/10)},\,0.05,\,0.45\right),\qquad v_{hub}(t)=v_{up}(t)\left(\frac{z_{hub}}{z_{up}}\right)^{\alpha_m(t)}$$
+Hava yoğunluğu: \(\rho = p_{hub}/(R_d T)\), \(p_{hub}=p_{s}\,e^{-g z_{hub}/(R_d T)}\); yoğunluk düzeltmesi \(v_{eq}=v\,(\rho/1.225)^{1/3}\). Güç eğrisi: \(P=P_r\,\dfrac{v^3-v_{in}^3}{v_r^3-v_{in}^3}\) (\(v_{in}\le v<v_r\)), \(P=P_r\) (\(v_r\le v<v_{out}\)). Analitik iz kaybı (Jensen/Gauss tipi): \(\ell_{wake}=\big[0.08+0.06\cos^2(\theta-\theta_{axis})\big]\,C_t(v)\). <b>Fırtına kesmesi:</b> \(v_{hub}\ge 25\) m/s veya \(v_{gust,10m}\ge 28\) m/s ise \(P=0\).
+Güneşte: berraklık indeksi \(k_t=\mathrm{GHI}/I_{clr}\) (zamansal eşitleme), eğimli yüzey ışınımı (POA, Erbs ayrıştırması + izotropik gökyüzü), Faiman hücre sıcaklığı \(T_{cell}=T_a+\dfrac{G_{POA}}{U_0+U_1 v}\), sıcaklık verimi \(1+\gamma (T_{cell}-25)\), AOD zayıflaması \(e^{-k\,\max(\mathrm{AOD}-\mathrm{AOD}_{med},0)}\) ve toz kirlenmesi.
+Zamansal eşitleme: rüzgâr/sıcaklık/basınç için PCHIP (tepe noktalarını korur).</div>
+        <div><b>Faktör D (kalıntı istifleme):</b> Hedef \(e(t)=P_{ref}(t)-P_{phys,meso}(t)\). LightGBM, kronolojik pencerede eğitilir; rampa ve yön hatası anlarına ağırlık verilir. Nihai tahmin \(\hat P = \operatorname{clip}\big(P_{phys,meso}+\hat e,\,0,\,P_{cap}\big)\). M5 yalnız GFS, M6 AIFS ve \(v_{AIFS}-v_{GFS}\) farkını da kullanır.</div>
+        <div><b>G2 (Kalıntı + Uyarlamalı Konformal Tahmin, ACI):</b> Her adımda aralık yarı genişliği, kalibrasyon hatalarının \((1-\alpha_t)\) kuantilidir ve
+$$\alpha_t=\alpha_{t-1}+\gamma\,(\alpha_{hedef}-\mathrm{err}_t),\qquad \mathrm{err}_t=\mathbb{1}\{P_{ref}(t)\notin[\hat P_{10},\hat P_{90}]\}$$
+ile güncellenir (\(\alpha_{hedef}=0.20\), yani %80 kapsama = P10-P90).</div>
+        <div><b>G5 (İklimsel hat → anlık hat):</b> ERA5 uzun kaydından hub rüzgârı %90/%95 persentilleri, 3 saatlik rampa persentilleri, gece \(\alpha\) %90 eşiği ve CAMS AOD %95 eşiği çıkarılır; anlık anomali motoruna eşik olarak beslenir. Ayrıca iklimsel persentil skoru (ay × 3 saat dilimi) hibrit modele özellik olarak girer.</div>
+        <div><b>G4 (Kısa vade hata → uzun vade P50/P90):</b> Klasik MCP, ham eğri ve yıllararası standart sapma ile \(P_{90}=P_{50}-1.2816\,\sigma_{yıllık}\). G4'te tam fizik zinciri (iz, yoğunluk, toz, fırtına kesintisi) kullanılır ve belirsizliğe M6 kısa vade hatası eklenir:
+$$\sigma_{tot}^2=\sigma_{yıllık}^2+\underbrace{\mathrm{RMSE}^2\,\tfrac{1+\rho_1}{1-\rho_1}\,8760}_{\text{rastgele (öz-ilintili)}}+\underbrace{(|\mathrm{Bias}|\cdot 8760)^2}_{\text{sistematik}},\qquad P_{q}=P_{50}-z_q\,\sigma_{tot}$$</div>
+        <div><b>Doğrulama metrikleri:</b> RMSE, nMAE, Bias; Rampa Yön Doğruluğu (Ramp-DA): referansta |ΔP₃ₛ| ≥ %10 kurulu güç olan anlarda tahmin ile referans değişim işaretinin uyumu; olay (rampa ≥ %20/3 sa) için POD = H/(H+M), FAR = FA/(H+FA), CSI = H/(H+M+FA) (±2 saat tolerans); konformal kapsama.</div>
+        <div class="text-xs text-slate-500 dark:text-slate-400"><b>Sınırlamalar:</b> (1) "Gerçekleşen" güç, ERA5 reanalizinden aynı fizik zinciriyle hesaplanan referanstır; SCADA değildir. Bu nedenle doğrulama, modellerin reanalize göre farkını ölçer, saha ölçümüne göre değil. (2) ERA5 ~5-6 gün gecikmeli olduğundan son günler referanssızdır. (3) Eğitim, Historical Forecast API'nin kısa öngörü sürelerine dayanır; uzun ufuklarda hibrit düzeltme ve konformal bant, yakın vade hatasına göre kalibredir. (4) CAMS ufku (~4-5 gün) ötesinde AOD/toz, gerçek CAMS kaydının medyanına sabitlenir. (5) Wake parametreleri ve ana dizilim ekseni varsayımdır.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-xs text-center text-slate-500 dark:text-slate-400 mt-6">Veri: Open-Meteo (Forecast, Historical Forecast, ERA5, CAMS). Ticari olmayan kullanım. Saatler TSİ (UTC+3).</footer>
+</div>
+
+<script>
+const MODELS = [
+  ['M1_GFS_Temel', 'M1 GFS', '#9ca3af', 'A'],
+  ['M2_AIFS_Temel', 'M2 AIFS', '#22c55e', 'A'],
+  ['M3_OrtaOlcek_Fizik', 'M3 Orta Ölçek', '#14b8a6', 'B'],
+  ['M4_OrtaOlcek_Mikro', 'M4 Tam Fizik', '#3b82f6', 'C'],
+  ['M5_Hibrit_GFS_YZ', 'M5 Hibrit-GFS', '#f59e0b', 'D'],
+  ['M6_Hibrit_AIFS_YZ', 'M6 Hibrit-AIFS', '#e11d48', 'D'],
+];
+const M6 = 'M6_Hibrit_AIFS_YZ', M5 = 'M5_Hibrit_GFS_YZ';
+const TYPE_COLORS = {
+  'Fırtına Kesintisi (Cut-Out)': 'bg-red-600 text-white',
+  'Ani Rampa Düşüşü': 'bg-orange-500 text-white',
+  'Ani Rampa Artışı': 'bg-sky-500 text-white',
+  'Bulut Çöküşü': 'bg-yellow-400 text-slate-900',
+  'Toz/Aerosol Olayı': 'bg-amber-700 text-white',
+  'Gece Düşük Seviyeli Jet (LLJ)': 'bg-purple-600 text-white',
+  'İklimsel Aşırı Rüzgâr (≥P95)': 'bg-pink-600 text-white',
+};
+let D = null, siteId = null, tab = 't1';
+const $ = (id) => document.getElementById(id);
+const dark = () => document.documentElement.classList.contains('dark');
+const tsi = (iso) => new Date(iso).toLocaleString('sv-SE', { timeZone: 'Europe/Istanbul' });
+const fmtT = (iso) => new Date(iso).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+const xs = (arr) => arr.map(tsi);
+const num = (v, d = 1) => (v === null || v === undefined || isNaN(v)) ? '-' : Number(v).toLocaleString('tr-TR', { minimumFractionDigits: d, maximumFractionDigits: d });
+
+function L(extra = {}) {
+  const fg = dark() ? '#e2e8f0' : '#0f172a', grid = dark() ? 'rgba(148,163,184,.2)' : 'rgba(100,116,139,.25)';
+  return Object.assign({
+    paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)', font: { color: fg, size: 12 },
+    margin: { l: 55, r: 55, t: 20, b: 40 }, hovermode: 'x unified',
+    legend: { orientation: 'h', y: -0.18 },
+    xaxis: { gridcolor: grid }, yaxis: { gridcolor: grid },
+  }, extra);
+}
+const CFG = { responsive: true, displaylogo: false };
+const S = () => D.sites[siteId];
+
+function init() {
+  $('gen').textContent = 'Üretim: ' + fmtT(D.meta.generated_at) + ' TSİ';
+  const sel = $('siteSel');
+  sel.innerHTML = '';
+  D.meta.site_order.forEach((id) => {
+    const b = document.createElement('button');
+    b.className = 'tab-btn'; b.dataset.site = id;
+    b.textContent = D.sites[id].label + (D.sites[id].type === 'wind' ? ' (Rüzgâr)' : ' (Güneş)');
+    b.onclick = () => { siteId = id; render(); };
+    sel.appendChild(b);
+  });
+  siteId = D.meta.site_order[0];
+  document.querySelectorAll('#tabs .tab-btn').forEach((b) => b.onclick = () => { tab = b.dataset.tab; showTab(); });
+  $('themeBtn').onclick = () => { document.documentElement.classList.toggle('dark'); render(); };
+  $('fType').onchange = $('fModel').onchange = renderEvents;
+  render();
+}
+
+function showTab() {
+  document.querySelectorAll('.tab').forEach((s) => s.classList.add('hidden'));
+  $(tab).classList.remove('hidden');
+  document.querySelectorAll('#tabs .tab-btn').forEach((b) => b.classList.toggle('active', b.dataset.tab === tab));
+  setTimeout(() => document.querySelectorAll('#' + tab + ' .js-plotly-plot').forEach((g) => Plotly.Plots.resize(g)), 30);
+}
+
+function render() {
+  document.querySelectorAll('#siteSel .tab-btn').forEach((b) => b.classList.toggle('active', b.dataset.site === siteId));
+  renderLive(); renderTab1(); renderTab2(); renderTab3(); renderTab4(); showTab();
+  if (window.renderMathInElement) {
+    renderMathInElement($('method'), { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '\\(', right: '\\)', display: false }], throwOnError: false });
+  }
+}
+
+// ---------------------------------------------------------------- canlı durum + radar
+function card(label, value, unit, sub) {
+  return `<div class="card"><div class="text-xs text-slate-500 dark:text-slate-400">${label}</div><div class="text-xl font-bold">${value} <span class="text-xs font-normal">${unit}</span></div><div class="text-xs text-slate-500 dark:text-slate-400">${sub || ''}</div></div>`;
+}
+function badges(list) {
+  if (!list.length) return '<span class="badge bg-green-600 text-white">Uyarı yok</span>';
+  return list.map((e) => `<span class="badge ${TYPE_COLORS[e.type] || 'bg-slate-500 text-white'}" title="${e.detail}">${e.type}: ${fmtT(e.start)} - ${fmtT(e.end)} (${e.hours} sa${e.peak !== null ? ', tepe ' + num(e.peak, 1) + ' ' + e.unit : ''})</span>`).join('');
+}
+function renderLive() {
+  const s = S(), l = s.live, w = s.type === 'wind';
+  let h = card('Sıcaklık', num(l.temp), '°C', 'orta ölçek (IFS+ICON)');
+  if (w) {
+    h += card('Hub Rüzgâr Hızı', num(l.vhub), 'm/s', s.hub_m + ' m');
+    h += card('Hamle (10 m)', num(l.gust), 'm/s', 'cut-out ≥ 28');
+    h += card('Bulutluluk', num(l.cloud, 0), '%', '');
+  } else {
+    h += card('GHI Işınım', num(l.ghi, 0), 'W/m²', 'DNI ' + num(l.dni, 0));
+    h += card('Bulutluluk', num(l.cloud, 0), '%', '');
+    h += card('Rüzgâr 10 m', num(l.v10), 'm/s', 'hücre soğutma');
+  }
+  h += card('CAMS Toz AOD', num(l.aod, 2), '', '550 nm');
+  h += card('Anlık Üretim (M6)', num(l.M6), 'MW', 'KF %' + num(l.cf_pct, 0) + ' | P10-P90: ' + num(l.M6_p10) + '-' + num(l.M6_p90));
+  $('cards').innerHTML = h;
+  $('radar6').innerHTML = badges(s.radar.h6);
+  $('radar24').innerHTML = badges(s.radar.h24);
+}
+
+// ---------------------------------------------------------------- sekme 1
+function prodTraces(blk, n) {
+  const t = xs(blk.time.slice(0, n));
+  const tr = [];
+  const p10 = blk[M6 + '_p10'].slice(0, n), p90 = blk[M6 + '_p90'].slice(0, n);
+  tr.push({ x: t, y: p90, mode: 'lines', line: { width: 0 }, showlegend: false, hoverinfo: 'skip' });
+  tr.push({ x: t, y: p10, mode: 'lines', line: { width: 0 }, fill: 'tonexty', fillcolor: 'rgba(225,29,72,.18)', name: 'M6 P10-P90' });
+  MODELS.forEach(([k, name, c]) => tr.push({ x: t, y: blk[k].slice(0, n), mode: 'lines', name, line: { color: c, width: k === M6 ? 3 : 1.5 } }));
+  return tr;
+}
+function renderTab1() {
+  const s = S(), f = s.forecast, n = 72, t = xs(f.time.slice(0, n));
+  Plotly.newPlot('g1', prodTraces(f, n), L({ yaxis: { title: 'Güç (MW)', rangemode: 'tozero', gridcolor: 'rgba(148,163,184,.2)' }, xaxis: { title: 'Zaman (TSİ)', gridcolor: 'rgba(148,163,184,.2)' } }), CFG);
+  if (s.type === 'wind') {
+    $('g2title').textContent = 'Grafik 2: Rüzgâr Hızı (10 m ve Hub), Cut-Out Sınırı';
+    const tr = [
+      { x: t, y: f.v10.slice(0, n), name: '10 m (orta ölçek)', line: { color: '#38bdf8' } },
+      { x: t, y: f.vhub.slice(0, n), name: 'Hub (orta ölçek)', line: { color: '#2563eb', width: 2.5 } },
+      { x: t, y: f.v_gfs.slice(0, n), name: 'Hub GFS', line: { color: '#9ca3af', dash: 'dot' } },
+      { x: t, y: f.v_aifs.slice(0, n), name: 'Hub AIFS', line: { color: '#22c55e', dash: 'dot' } },
+      { x: t, y: f.gust.slice(0, n), name: 'Hamle 10 m', line: { color: '#f97316', width: 1 } },
+    ];
+    Plotly.newPlot('g2', tr, L({ yaxis: { title: 'm/s', rangemode: 'tozero' }, shapes: [{ type: 'line', xref: 'paper', x0: 0, x1: 1, y0: 25, y1: 25, line: { color: 'red', width: 2, dash: 'dash' } }],
+      annotations: [{ xref: 'paper', x: 1, y: 25, text: 'Cut-out 25 m/s', showarrow: false, yanchor: 'bottom', xanchor: 'right', font: { color: 'red' } }] }), CFG);
+    $('g2btitle').textContent = 'Dinamik Kayma Üssü α(t) (LLJ göstergesi)';
+    const th = s.climate.g5_thresholds.alpha_night_p90;
+    Plotly.newPlot('g2b', [{ x: t, y: f.alpha_meso.slice(0, n), name: 'α(t) orta ölçek', line: { color: '#a855f7' } }],
+      L({ yaxis: { title: 'α', range: [0, 0.5] }, shapes: th ? [{ type: 'line', xref: 'paper', x0: 0, x1: 1, y0: th, y1: th, line: { color: '#a855f7', dash: 'dash' } }] : [] }), CFG);
+  } else {
+    $('g2title').textContent = 'Grafik 2: GHI, DNI ve Bulutluluk';
+    Plotly.newPlot('g2', [
+      { x: t, y: f.ghi.slice(0, n), name: 'GHI (W/m²)', line: { color: '#f59e0b', width: 2.5 } },
+      { x: t, y: f.dni.slice(0, n), name: 'DNI (W/m²)', line: { color: '#ef4444' } },
+      { x: t, y: f.cloud.slice(0, n), name: 'Bulutluluk (%)', yaxis: 'y2', line: { color: '#94a3b8', dash: 'dot' } },
+    ], L({ yaxis: { title: 'W/m²', rangemode: 'tozero' }, yaxis2: { title: '%', overlaying: 'y', side: 'right', range: [0, 100], showgrid: false } }), CFG);
+    $('g2btitle').textContent = 'CAMS Aerosol Optik Derinliği (AOD)';
+    const th = s.climate.g5_thresholds.aod_p95;
+    Plotly.newPlot('g2b', [{ x: t, y: f.aod.slice(0, n), name: 'AOD', line: { color: '#b45309' } }],
+      L({ yaxis: { title: 'AOD', rangemode: 'tozero' }, shapes: th ? [{ type: 'line', xref: 'paper', x0: 0, x1: 1, y0: th, y1: th, line: { color: '#b45309', dash: 'dash' } }] : [] }), CFG);
+  }
+}
+
+// ---------------------------------------------------------------- sekme 2
+function renderTab2() {
+  const s = S(), f = s.forecast, t = xs(f.time);
+  Plotly.newPlot('g3', prodTraces(f, f.time.length), L({ yaxis: { title: 'Güç (MW)', rangemode: 'tozero' } }), CFG);
+  if (s.type === 'wind') {
+    $('g4title').textContent = 'Hub Rüzgâr Projeksiyonu (m/s), Cut-Out ve İklimsel P95';
+    const p95 = s.climate.g5_thresholds.v_p95;
+    Plotly.newPlot('g4', [
+      { x: t, y: f.vhub, name: 'Hub (orta ölçek)', line: { color: '#2563eb' } },
+      { x: t, y: f.v_gfs, name: 'Hub GFS', line: { color: '#9ca3af', dash: 'dot' } },
+      { x: t, y: f.v_aifs, name: 'Hub AIFS', line: { color: '#22c55e', dash: 'dot' } }],
+      L({ yaxis: { title: 'm/s', rangemode: 'tozero' }, shapes: [
+        { type: 'line', xref: 'paper', x0: 0, x1: 1, y0: 25, y1: 25, line: { color: 'red', dash: 'dash' } },
+        { type: 'line', xref: 'paper', x0: 0, x1: 1, y0: p95, y1: p95, line: { color: '#ec4899', dash: 'dot' } }] }), CFG);
+  } else {
+    $('g4title').textContent = 'GHI Projeksiyonu (W/m²) ve Berraklık İndeksi';
+    Plotly.newPlot('g4', [
+      { x: t, y: f.ghi, name: 'GHI', line: { color: '#f59e0b' } },
+      { x: t, y: f.kt, name: 'kt', yaxis: 'y2', line: { color: '#64748b', dash: 'dot' } }],
+      L({ yaxis: { title: 'W/m²', rangemode: 'tozero' }, yaxis2: { title: 'kt', overlaying: 'y', side: 'right', range: [0, 1.3], showgrid: false } }), CFG);
+  }
+  const ev = s.events.filter((e) => e.period === 'gelecek' && e.model !== 'ERA5_Referans');
+  const types = [...new Set(ev.map((e) => e.type))].sort();
+  const ft = $('fType'), fm = $('fModel'), pt = ft.value, pm = fm.value;
+  ft.innerHTML = '<option value="">Tüm olay türleri</option>' + types.map((x) => `<option>${x}</option>`).join('');
+  fm.innerHTML = '<option value="">Tüm modeller</option>' + MODELS.map(([k, n]) => `<option value="${k}">${n}</option>`).join('');
+  if (types.includes(pt)) ft.value = pt;
+  if (pm) fm.value = pm;
+  // matris
+  const mn = Object.fromEntries(MODELS.map(([k, n]) => [k, n]));
+  let h = '<table class="t"><thead><tr><th>Olay türü</th>' + MODELS.map(([, n]) => `<th>${n}</th>`).join('') + '</tr></thead><tbody>';
+  types.forEach((ty) => {
+    h += `<tr><td>${ty}</td>` + MODELS.map(([k]) => `<td>${ev.filter((e) => e.type === ty && e.model === k).length}</td>`).join('') + '</tr>';
+  });
+  $('matrix').innerHTML = types.length ? h + '</tbody></table>' : '<span class="text-sm">Önümüzdeki 16 günde olay öngörülmüyor.</span>';
+  renderEvents();
+}
+function renderEvents() {
+  const s = S(), ty = $('fType').value, mo = $('fModel').value;
+  const mn = Object.fromEntries(MODELS.map(([k, n]) => [k, n]));
+  let ev = s.events.filter((e) => e.period === 'gelecek' && e.model !== 'ERA5_Referans' && (!ty || e.type === ty) && (!mo || e.model === mo));
+  ev.sort((a, b) => a.start.localeCompare(b.start));
+  $('evCount').textContent = ev.length + ' olay';
+  let h = '<table class="t"><thead><tr><th>Başlangıç (TSİ)</th><th>Bitiş</th><th>Süre (sa)</th><th>Tür</th><th>Model</th><th>Tepe</th><th>Ölçüt</th></tr></thead><tbody>';
+  ev.slice(0, 600).forEach((e) => {
+    h += `<tr><td>${fmtT(e.start)}</td><td>${fmtT(e.end)}</td><td>${e.hours}</td><td><span class="badge ${TYPE_COLORS[e.type] || ''}">${e.type}</span></td><td>${mn[e.model]}</td><td>${num(e.peak, 1)} ${e.unit}</td><td style="white-space:normal;text-align:left">${e.detail}</td></tr>`;
+  });
+  $('evTable').innerHTML = ev.length ? h + '</tbody></table>' : '<span class="text-sm">Kayıt yok.</span>';
+}
+
+// ---------------------------------------------------------------- sekme 3
+function renderTab3() {
+  const s = S(), g = s.ghost, t = xs(g.time);
+  const tr = [];
+  MODELS.forEach(([k, name, c]) => tr.push({ x: t, y: g[k], name, line: { color: c, width: k === M6 ? 2.5 : 1.2 }, xaxis: 'x', yaxis: 'y' }));
+  tr.push({ x: t, y: g.ref, name: 'Gerçekleşen / ERA5 referansı', line: { color: dark() ? '#ffffff' : '#000000', width: 4 }, xaxis: 'x', yaxis: 'y' });
+  MODELS.forEach(([k, name, c]) => tr.push({ x: t, y: g[k].map((v, i) => (v === null || g.ref[i] === null) ? null : v - g.ref[i]), name: name + ' hata', line: { color: c, width: k === M6 ? 2 : 1 }, xaxis: 'x', yaxis: 'y2', showlegend: false }));
+  const grid = 'rgba(148,163,184,.2)';
+  Plotly.newPlot('g5', tr, L({ yaxis: { domain: [0.32, 1], title: 'Güç (MW)', gridcolor: grid }, yaxis2: { domain: [0, 0.26], title: 'Hata (MW)', zeroline: true, gridcolor: grid }, xaxis: { anchor: 'y2', gridcolor: grid }, legend: { orientation: 'h', y: -0.12 } }), CFG);
+  $('refNote').textContent = D.meta.reference_note + ' Son referans saati: ' + fmtT(s.last_ref_time) + ' TSİ (sonrası referanssız).';
+  // tablo
+  const rows = s.leaderboard;
+  const best = (k, dir) => { const v = rows.map((r) => r[k]).filter((x) => x !== null); if (!v.length) return null; return dir === 'min' ? Math.min(...v) : Math.max(...v); };
+  const bests = { rmse: best('rmse', 'min'), nmae: best('nmae', 'min'), bias: Math.min(...rows.map((r) => Math.abs(r.bias))), ramp_da: best('ramp_da', 'max'), pod: best('pod', 'max'), far: best('far', 'min'), csi: best('csi', 'max') };
+  const nm = Object.fromEntries(MODELS.map(([k, n]) => [k, n]));
+  const cell = (r, k, d, pct) => { const v = r[k]; const isB = v !== null && (k === 'bias' ? Math.abs(v) === bests.bias : v === bests[k]); return `<td class="${isB ? 'best' : ''}">${v === null ? '-' : num(pct ? v * 100 : v, d)}</td>`; };
+  let h = '<table class="t"><thead><tr><th>Model</th><th>RMSE (MW)</th><th>nMAE (%)</th><th>Bias (MW)</th><th>Ramp-DA (%)</th><th>POD (%)</th><th>FAR (%)</th><th>CSI (%)</th><th>Konformal Kapsama (%)</th><th>n</th></tr></thead><tbody>';
+  const rk = rows.slice().sort((a, b) => a.rmse - b.rmse).map((r) => r.model);
+  rows.forEach((r) => {
+    h += `<tr><td>${nm[r.model]} <span class="text-xs text-slate-400">#${rk.indexOf(r.model) + 1}</span></td>${cell(r, 'rmse', 2)}${cell(r, 'nmae', 2)}${cell(r, 'bias', 2)}${cell(r, 'ramp_da', 1)}${cell(r, 'pod', 1, true)}${cell(r, 'far', 1, true)}${cell(r, 'csi', 1, true)}<td>${r.coverage === null ? '-' : num(r.coverage, 1)}</td><td>${r.n}</td></tr>`;
+  });
+  $('lb').innerHTML = h + '</tbody></table><p class="text-xs mt-2 text-slate-500 dark:text-slate-400">Yeşil: sütunun en iyisi. POD/FAR/CSI, ±2 saat toleranslı rampa olayları (≥%20 kurulu güç/3 sa) üzerinden; referansta olay yoksa "-". Hedef kapsama %80 (P10-P90).</p>';
+  // ablasyon
+  const x = rows.map((r) => (MODELS.find((m) => m[0] === r.model)[3]) + ': ' + nm[r.model]);
+  Plotly.newPlot('g6', [
+    { x, y: rows.map((r) => r.rmse), type: 'bar', name: 'RMSE (MW)', marker: { color: rows.map((r) => MODELS.find((m) => m[0] === r.model)[2]) } },
+    { x, y: rows.map((r) => r.ramp_da), type: 'scatter', mode: 'lines+markers', name: 'Ramp-DA (%)', yaxis: 'y2', line: { color: dark() ? '#fff' : '#000' }, connectgaps: true },
+  ], L({ yaxis: { title: 'RMSE (MW)', rangemode: 'tozero' }, yaxis2: { title: 'Ramp-DA (%)', overlaying: 'y', side: 'right', range: [0, 105], showgrid: false }, hovermode: 'closest' }), CFG);
+}
+
+// ---------------------------------------------------------------- sekme 4
+function renderTab4() {
+  const s = S(), c = s.climate, k = c.classic, g = c.g4;
+  const d = (a, b) => (b ? ((a / b - 1) * 100) : null);
+  const row = (n, a, b, dg, u) => `<tr><td>${n}</td><td>${num(a, dg)}</td><td>${num(b, dg)}</td><td>${a && b ? num(d(b, a), 1) + '%' : '-'}</td></tr>`;
+  let h = '<table class="t"><thead><tr><th>Ölçüt (MWh/yıl)</th><th>Klasik MCP</th><th>G4 Hibrit Düzeltmeli</th><th>Fark</th></tr></thead><tbody>';
+  h += row('P50', k.P50, g.P50, 0) + row('P75', k.P75, g.P75, 0) + row('P90', k.P90, g.P90, 0);
+  h += `<tr><td>Kapasite Faktörü (%)</td><td>${num(k.cf, 1)}</td><td>${num(g.cf, 1)}</td><td></td></tr>`;
+  h += `<tr><td>Yıllararası σ (MWh)</td><td>${num(k.sigma, 0)}</td><td>${num(g.sigma, 0)}</td><td></td></tr>`;
+  h += `<tr><td>RCoV (IQR / Medyan)</td><td>${num(k.rcov, 3)}</td><td>${num(g.rcov, 3)}</td><td></td></tr>`;
+  $('clTable').innerHTML = h + '</tbody></table>';
+  $('clNote').textContent = `ERA5 ${c.years[0]}-${c.years[c.years.length - 1]} (${c.years.length} tam yıl). G4 belirsizliği: yıllararası σ=${num(g.sigma_inter, 0)}, kısa vade rastgele σ=${num(g.sigma_short_random, 0)}, kısa vade sistematik σ=${num(g.sigma_short_bias, 0)} MWh (M6 RMSE=${num(g.rmse_m6, 2)} MW, Bias=${num(g.bias_m6, 2)} MW, ρ₁=${num(g.rho_lag1, 2)}). Referans ERA5 türevidir (SCADA değildir).`;
+  const lt = c.loss_tree, w = s.type === 'wind';
+  const names = w ? ['Brüt (kayıpsız eğri)', 'Fırtına kesintisi', 'Yoğunluk / sıcaklık', 'Wake (iz)', 'Toz', 'Net'] : ['Brüt (ideal POA)', 'AOD zayıflaması', 'Hücre sıcaklığı', 'Toz kirlenmesi', 'Net'];
+  const vals = w ? [lt.gross, -lt.cutout, -lt.density, -lt.wake, -lt.dust, lt.net] : [lt.gross, -lt.aod, -lt.temperature, -lt.dust, lt.net];
+  Plotly.newPlot('g7', [{ type: 'waterfall', x: names, y: vals, measure: vals.map((_, i) => (i === 0 ? 'absolute' : (i === vals.length - 1 ? 'total' : 'relative'))), connector: { line: { color: '#64748b' } },
+    text: vals.map((v) => num(v, 0)), textposition: 'outside', decreasing: { marker: { color: '#ef4444' } }, increasing: { marker: { color: '#22c55e' } }, totals: { marker: { color: '#3b82f6' } } }],
+    L({ yaxis: { title: 'MWh/yıl' }, hovermode: 'closest' }), CFG);
+  const yrs = c.years;
+  Plotly.newPlot('g8', [
+    { x: yrs, y: yrs.map((y) => c.aep_raw[y]), type: 'bar', name: 'Ham eğri (klasik)', marker: { color: '#94a3b8' } },
+    { x: yrs, y: yrs.map((y) => c.aep_full[y]), type: 'bar', name: 'Tam fizik (G4)', marker: { color: '#3b82f6' } },
+  ], L({ barmode: 'group', yaxis: { title: 'MWh/yıl' }, xaxis: { type: 'category' }, hovermode: 'closest' }), CFG);
+}
+
+// ---------------------------------------------------------------- yeniden analiz
+// Üç kip: (1) GitHub Pages: Actions workflow_dispatch (kişisel erişim anahtarı gerekir),
+//         (2) yerel sunucu (python src/serve.py): /api/refresh, (3) file://: yalnızca bilgi.
+const WORKFLOW = 'update_observatory.yml';
+const TOKEN_KEY = 'zincir_gh_token';
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+function rmsg(t, bad) {
+  const e = $('rstat'); e.classList.remove('hidden');
+  e.classList.toggle('border-red-500', !!bad); e.classList.toggle('border-green-600', !bad);
+  e.textContent = t;
+}
+function ghRepo() {
+  const owner = location.hostname.split('.')[0];
+  const repo = location.pathname.split('/').filter(Boolean)[0];
+  return { owner, repo };
+}
+async function loadFresh() {
+  const r = await fetch('web_data/observability_data.json?t=' + Date.now(), { cache: 'no-store' });
+  if (!r.ok) throw new Error('veri okunamadı: HTTP ' + r.status);
+  return r.json();
+}
+async function waitNewData(oldGen, maxMs) {
+  const t0 = Date.now();
+  while (Date.now() - t0 < maxMs) {
+    try { const d = await loadFresh(); if (d.meta.generated_at !== oldGen) return d; } catch (e) { /* devam */ }
+    await sleep(8000);
+  }
+  return null;
+}
+async function refreshGithub() {
+  let token = localStorage.getItem(TOKEN_KEY);
+  if (!token) {
+    token = prompt('GitHub erişim anahtarı (fine-grained PAT; yalnızca bu repo, "Actions: Read and write" izni).\nTarayıcınızda (localStorage) saklanır, repoya yazılmaz:');
+    if (!token) return;
+    localStorage.setItem(TOKEN_KEY, token.trim()); token = token.trim();
+  }
+  const { owner, repo } = ghRepo();
+  const H = { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
+  const api = `https://api.github.com/repos/${owner}/${repo}`;
+  const old = D.meta.generated_at;
+  const rr = await fetch(api, { headers: H });
+  if (!rr.ok) { if (rr.status === 401 || rr.status === 403 || rr.status === 404) localStorage.removeItem(TOKEN_KEY); throw new Error('GitHub erişimi reddedildi (HTTP ' + rr.status + '). Anahtarı kontrol edin; yanlış anahtar silindi.'); }
+  const branch = (await rr.json()).default_branch;
+  const t0 = new Date(Date.now() - 5000).toISOString();
+  const dr = await fetch(`${api}/actions/workflows/${WORKFLOW}/dispatches`, { method: 'POST', headers: H, body: JSON.stringify({ ref: branch }) });
+  if (dr.status !== 204) throw new Error('Workflow başlatılamadı (HTTP ' + dr.status + '). Anahtarda "Actions: Read and write" izni var mı?');
+  rmsg('Analiz GitHub sunucusunda başlatıldı. Genellikle 3-8 dakika sürer...');
+  const t1 = Date.now();
+  let run = null;
+  while (Date.now() - t1 < 20 * 60 * 1000) {
+    await sleep(10000);
+    const lr = await fetch(`${api}/actions/workflows/${WORKFLOW}/runs?event=workflow_dispatch&per_page=5&created=%3E%3D${encodeURIComponent(t0)}`, { headers: H });
+    if (lr.ok) {
+      const runs = (await lr.json()).workflow_runs;
+      run = runs && runs[0];
+      if (run) {
+        rmsg(`GitHub Actions: ${run.status === 'completed' ? 'tamamlandı (' + run.conclusion + ')' : run.status} | ${Math.round((Date.now() - t1) / 1000)} sn`);
+        if (run.status === 'completed') break;
+      }
+    }
+  }
+  if (!run || run.conclusion !== 'success') throw new Error('Workflow başarısız/zaman aşımı. Ayrıntı: ' + (run ? run.html_url : 'Actions sekmesi'));
+  rmsg('Analiz bitti; Pages yayını bekleniyor (1-2 dk)...');
+  const nd = await waitNewData(old, 5 * 60 * 1000);
+  if (!nd) throw new Error('Yeni veri henüz yayınlanmadı; sayfayı biraz sonra yenileyin.');
+  D = nd; init(); rmsg('Veriler güncellendi: ' + fmtT(D.meta.generated_at) + ' TSİ');
+}
+async function refreshLocal() {
+  const old = D.meta.generated_at;
+  const r = await fetch('/api/refresh', { method: 'POST' });
+  if (!r.ok) throw new Error('Yerel sunucu isteği reddedildi: HTTP ' + r.status);
+  rmsg('Analiz yerel bilgisayarda çalışıyor...');
+  for (let i = 0; i < 400; i++) {
+    await sleep(3000);
+    const st = await (await fetch('/api/status?t=' + Date.now())).json();
+    rmsg('Yerel analiz: ' + st.state + (st.last_line ? ' | ' + st.last_line : ''));
+    if (st.state === 'error') throw new Error('Analiz hata verdi: ' + st.last_line);
+    if (st.state === 'idle') break;
+  }
+  D = await loadFresh(); init(); rmsg('Veriler güncellendi: ' + fmtT(D.meta.generated_at) + ' TSİ');
+}
+async function doRefresh() {
+  const b = $('refreshBtn'); b.disabled = true; b.style.opacity = .6;
+  try {
+    if (location.protocol === 'file:') {
+      rmsg('file:// ile açıldığı için tarayıcı Python çalıştıramaz. Yerelde: "python src/serve.py" çalıştırıp http://localhost:8000 adresini açın. GitHub Pages sitesinde bu buton Actions üzerinden çalışır.', true);
+    } else if (location.hostname.endsWith('.github.io')) await refreshGithub();
+    else await refreshLocal();
+  } catch (e) { rmsg(String(e.message || e), true); }
+  b.disabled = false; b.style.opacity = 1;
+}
+
+// ---------------------------------------------------------------- yükleme
+async function boot() {
+  $('refreshBtn').onclick = doRefresh;
+  $('tokBtn').onclick = () => {
+    if (localStorage.getItem(TOKEN_KEY) && confirm('Kayıtlı GitHub anahtarı silinsin mi?')) { localStorage.removeItem(TOKEN_KEY); rmsg('Anahtar silindi.'); }
+    else if (!localStorage.getItem(TOKEN_KEY)) rmsg('Kayıtlı anahtar yok; "Yeniden Analiz" ilk tıklamada isteyecek.');
+  };
+  try {
+    if (window.ZINCIR_DATA) D = window.ZINCIR_DATA;
+    else { const r = await fetch('web_data/observability_data.json'); D = await r.json(); }
+    init();
+  } catch (e) {
+    $('err').classList.remove('hidden');
+    $('err').textContent = 'Veri yüklenemedi: ' + e + ' (önce python src/run_pipeline.py çalıştırın).';
+  }
+}
+window.addEventListener('load', boot);
+</script>
+</body>
+</html>
